@@ -6,7 +6,7 @@
   <link href="http://emptybottle.xyz/atom.xml" rel="self"/>
   
   <link href="http://emptybottle.xyz/"/>
-  <updated>2021-04-09T11:32:16.000Z</updated>
+  <updated>2021-05-10T03:12:48.000Z</updated>
   <id>http://emptybottle.xyz/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>信息收集</title>
+    <link href="http://emptybottle.xyz/2021/05/10/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/"/>
+    <id>http://emptybottle.xyz/2021/05/10/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/</id>
+    <published>2021-05-10T03:12:11.000Z</published>
+    <updated>2021-05-10T03:12:48.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>1.域名-&gt;IP #115.159.86.220</p><a id="more"></a><p>CDN:内容分发网络<br>    通过邮件(看邮箱头源 ip)找真实 ip<br>    通过查询域名历史 ip，<a href="http://toolbar.netcraft.com/">http://toolbar.netcraft.com</a><br>    超级ping：<a href="https://ping.aizhan.com/">https://ping.aizhan.com/</a>         <a href="http://ping.chinaz.com/">http://ping.chinaz.com/</a><br>    查子域名，因为有的子域名没有使用CDN<br>    参考文章：<a href="https://www.cnblogs.com/qiudabai/p/9763739.html">https://www.cnblogs.com/qiudabai/p/9763739.html</a><br>DNS:<a href="http://site.ip138.com/">http://site.ip138.com</a></p><p>2.域名-&gt;whois<br>邮箱、注册人、公司、电话<br>备案：<a href="https://www.tianyancha.com/">https://www.tianyancha.com/</a></p><p>3.google hack语法</p><p>4.cms<br>常见cms:WordPress、Dedecms、Discuz、PhpWeb、PhpWind、Dvbbs、PhpCMS、ECShop、、SiteWeaver、AspCMS、帝国、Z-Blog等<br>在线工具：<br>BugScaner：<a href="http://whatweb.bugscaner.com/look/">http://whatweb.bugscaner.com/look/</a><br>云悉指纹：<a href="http://www.yunsee.cn/finger.html">http://www.yunsee.cn/finger.html</a><br>WhatWeb：<a href="https://whatweb.net/">https://whatweb.net/</a><br>火狐插件：<br>Wappalyzer<br>服务器类型：<br>TTL值：Windows的TTL值都是一般是128，Linux则是64，所以大于100的肯定是Windows，而几十的肯定是Linux<br>网站容器（中间件）<br>脚本类型<br>数据库类型（报错、端口）<br>常见搭配：<br>ASP和.NET：Microsoft SQL Server<br>PHP：MySQL、PostgreSQL<br>Java：Oracle、MySQL</p><p>5.目录扫描（御剑、爬虫_rad_长亭爬虫、dirsearch）</p><p>6.子域名<br>SubDomainBrute：<a href="https://github.com/lijiejie/subDomainsBrute">https://github.com/lijiejie/subDomainsBrute</a><br>Sublist3r：<a href="https://github.com/aboul3la/Sublist3r">https://github.com/aboul3la/Sublist3r</a><br>Layer（5.0增强版）：<a href="https://pan.baidu.com/s/1Jja4QK5BsAXJ0i0Ax8Ve2Q">https://pan.baidu.com/s/1Jja4QK5BsAXJ0i0Ax8Ve2Q</a> 密码:aup5<br><a href="https://d.chinacycc.com(大佬推荐的说好用的很,但是收费.)/">https://d.chinacycc.com（大佬推荐的说好用的很，但是收费。）</a><br>在线工具：<a href="http://z.zcjun.com/">http://z.zcjun.com/</a></p><p>7.端口扫描</p><p>8.waf识别<br>在kail中最常用的WAF扫描工具是wafw00f<br>wafw00f -l<br>#查看该工具能检测那些WAF<br>wafw00f <a href="http://www.baidu.com/">http://www.baidu.com</a></p><p>github开源工具利用：<br><a href="https://zhuanlan.zhihu.com/p/53112370">https://zhuanlan.zhihu.com/p/53112370</a></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;1.域名-&amp;gt;IP #115.159.86.220&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>sqlmap</title>
@@ -48,28 +65,6 @@
     
     
     <category term="kali攻击利用" scheme="http://emptybottle.xyz/categories/kali%E6%94%BB%E5%87%BB%E5%88%A9%E7%94%A8/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>常见的威胁端口</title>
-    <link href="http://emptybottle.xyz/2021/04/09/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/"/>
-    <id>http://emptybottle.xyz/2021/04/09/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/</id>
-    <published>2021-04-09T07:34:00.000Z</published>
-    <updated>2021-05-10T03:10:24.000Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>1.域名-&gt;IP #115.159.86.220</p><p>CDN:内容分发网络<br>    通过邮件(看邮箱头源 ip)找真实 ip<br>    通过查询域名历史 ip，<a href="http://toolbar.netcraft.com/">http://toolbar.netcraft.com</a><br>    超级ping：<a href="https://ping.aizhan.com/">https://ping.aizhan.com/</a>         <a href="http://ping.chinaz.com/">http://ping.chinaz.com/</a><br>    查子域名，因为有的子域名没有使用CDN<br>    参考文章：<a href="https://www.cnblogs.com/qiudabai/p/9763739.html">https://www.cnblogs.com/qiudabai/p/9763739.html</a><br>DNS:<a href="http://site.ip138.com/">http://site.ip138.com</a></p><p>2.域名-&gt;whois<br>邮箱、注册人、公司、电话<br>备案：<a href="https://www.tianyancha.com/">https://www.tianyancha.com/</a></p><p>3.google hack语法</p><p>4.cms<br>常见cms:WordPress、Dedecms、Discuz、PhpWeb、PhpWind、Dvbbs、PhpCMS、ECShop、、SiteWeaver、AspCMS、帝国、Z-Blog等<br>在线工具：<br>BugScaner：<a href="http://whatweb.bugscaner.com/look/">http://whatweb.bugscaner.com/look/</a><br>云悉指纹：<a href="http://www.yunsee.cn/finger.html">http://www.yunsee.cn/finger.html</a><br>WhatWeb：<a href="https://whatweb.net/">https://whatweb.net/</a><br>火狐插件：<br>Wappalyzer<br>服务器类型：<br>TTL值：Windows的TTL值都是一般是128，Linux则是64，所以大于100的肯定是Windows，而几十的肯定是Linux<br>网站容器（中间件）<br>脚本类型<br>数据库类型（报错、端口）<br>常见搭配：<br>ASP和.NET：Microsoft SQL Server<br>PHP：MySQL、PostgreSQL<br>Java：Oracle、MySQL</p><p>5.目录扫描（御剑、爬虫_rad_长亭爬虫、dirsearch）</p><p>6.子域名<br>SubDomainBrute：<a href="https://github.com/lijiejie/subDomainsBrute">https://github.com/lijiejie/subDomainsBrute</a><br>Sublist3r：<a href="https://github.com/aboul3la/Sublist3r">https://github.com/aboul3la/Sublist3r</a><br>Layer（5.0增强版）：<a href="https://pan.baidu.com/s/1Jja4QK5BsAXJ0i0Ax8Ve2Q">https://pan.baidu.com/s/1Jja4QK5BsAXJ0i0Ax8Ve2Q</a> 密码:aup5<br><a href="https://d.chinacycc.com(大佬推荐的说好用的很,但是收费.)/">https://d.chinacycc.com（大佬推荐的说好用的很，但是收费。）</a><br>在线工具：<a href="http://z.zcjun.com/">http://z.zcjun.com/</a></p><p>7.端口扫描</p><p>8.waf识别<br>在kail中最常用的WAF扫描工具是wafw00f<br>wafw00f -l<br>#查看该工具能检测那些WAF<br>wafw00f <a href="http://www.baidu.com/">http://www.baidu.com</a></p><p>github开源工具利用：<br><a href="https://zhuanlan.zhihu.com/p/53112370">https://zhuanlan.zhihu.com/p/53112370</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    <category term="常识" scheme="http://emptybottle.xyz/categories/%E5%B8%B8%E8%AF%86/"/>
     
     
   </entry>
@@ -151,11 +146,11 @@
   </entry>
   
   <entry>
-    <title>虚拟机必不可少</title>
+    <title>vmware和kali搭建</title>
     <link href="http://emptybottle.xyz/2020/11/11/VMware+kali%E7%9A%84%E6%90%AD%E5%BB%BA/"/>
     <id>http://emptybottle.xyz/2020/11/11/VMware+kali%E7%9A%84%E6%90%AD%E5%BB%BA/</id>
     <published>2020-11-11T12:43:00.000Z</published>
-    <updated>2021-04-07T03:26:22.000Z</updated>
+    <updated>2021-05-10T03:13:38.000Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>相比对于学安全的虚拟机的重要性不用说都知道多重要了吧！！<a id="more"></a></p><p>百度也是各种教程齐全、、</p><p>虚拟机安装教程这里不多提百度都能出来</p><p>百度网盘镜像分享链接放在这里</p><p>kali镜像也包括在内!!!!</p><p>复制这段内容后打开百度网盘App，操作更方便哦。</p><p>链接:<a href="https://pan.baidu.com/s/1elQkD4rVsASygRJSTsxt5Q">https://pan.baidu.com/s/1elQkD4rVsASygRJSTsxt5Q</a> 提取码:u6fz</p>]]></content>
     
@@ -163,8 +158,6 @@
     <summary type="html">点击阅读全文</summary>
     
     
-    
-    <category term="虚拟机" scheme="http://emptybottle.xyz/categories/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
     
     
     <category term="安全必备" scheme="http://emptybottle.xyz/tags/%E5%AE%89%E5%85%A8%E5%BF%85%E5%A4%87/"/>
