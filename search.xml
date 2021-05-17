@@ -1,31 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>信息收集</title>
-    <url>/2021/04/14/ml/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>1.域名-&gt;IP  #115.159.86.220</p>
-<a id="more"></a>
-<pre><code>CDN:内容分发网络
-    通过邮件(看邮箱头源 ip)找真实 ip
-    通过查询域名历史 ip，http://toolbar.netcraft.com
-    超级ping：https://ping.aizhan.com/         http://ping.chinaz.com/
-    查子域名，因为有的子域名没有使用CDN
-    参考文章：https://www.cnblogs.com/qiudabai/p/9763739.html
-DNS:http://site.ip138.com</code></pre>
-<p>2.域名-&gt;whois<br>    邮箱、注册人、公司、电话<br>    备案：<a href="https://www.tianyancha.com/">https://www.tianyancha.com/</a></p>
-<p>3.google hack语法</p>
-<p>4.cms<br>    常见cms:WordPress、Dedecms、Discuz、PhpWeb、PhpWind、Dvbbs、PhpCMS、ECShop、、SiteWeaver、AspCMS、帝国、Z-Blog等<br>    在线工具：<br>        BugScaner：<a href="http://whatweb.bugscaner.com/look/">http://whatweb.bugscaner.com/look/</a><br>        云悉指纹：<a href="http://www.yunsee.cn/finger.html">http://www.yunsee.cn/finger.html</a><br>        WhatWeb：<a href="https://whatweb.net/">https://whatweb.net/</a><br>    火狐插件：<br>        Wappalyzer<br>    服务器类型：<br>        TTL值：Windows的TTL值都是一般是128，Linux则是64，所以大于100的肯定是Windows，而几十的肯定是Linux<br>    网站容器（中间件）<br>    脚本类型<br>    数据库类型（报错、端口）<br>        常见搭配：<br>            ASP和.NET：Microsoft SQL Server<br>            PHP：MySQL、PostgreSQL<br>            Java：Oracle、MySQL</p>
-<p>5.目录扫描（御剑、爬虫_rad_长亭爬虫、dirsearch）</p>
-<p>6.子域名<br>    SubDomainBrute：<a href="https://github.com/lijiejie/subDomainsBrute">https://github.com/lijiejie/subDomainsBrute</a><br>    Sublist3r：<a href="https://github.com/aboul3la/Sublist3r">https://github.com/aboul3la/Sublist3r</a><br>    Layer（5.0增强版）：<a href="https://pan.baidu.com/s/1Jja4QK5BsAXJ0i0Ax8Ve2Q">https://pan.baidu.com/s/1Jja4QK5BsAXJ0i0Ax8Ve2Q</a>  密码:aup5<br>    <a href="https://d.chinacycc.com(大佬推荐的说好用的很,但是收费.)/">https://d.chinacycc.com（大佬推荐的说好用的很，但是收费。）</a><br>    在线工具：<a href="http://z.zcjun.com/">http://z.zcjun.com/</a></p>
-<p>7.端口扫描</p>
-<p>8.waf识别<br>    在kail中最常用的WAF扫描工具是wafw00f<br>    wafw00f -l<br>    #查看该工具能检测那些WAF<br>    wafw00f <a href="http://www.baidu.com/">http://www.baidu.com</a></p>
-<p>github开源工具利用：<br>    <a href="https://zhuanlan.zhihu.com/p/53112370">https://zhuanlan.zhihu.com/p/53112370</a></p>
-]]></content>
-      <tags>
-        <tag>常识</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>sqlmap</title>
     <url>/2021/04/09/qlmap/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>Sqlmap自动化测试</p>
@@ -64,6 +39,24 @@ DNS:http://site.ip138.com</code></pre>
 ]]></content>
       <categories>
         <category>kali攻击利用</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>常见的威胁端口</title>
+    <url>/2021/04/09/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>1.域名-&gt;IP #115.159.86.220</p>
+<p>CDN:内容分发网络<br>    通过邮件(看邮箱头源 ip)找真实 ip<br>    通过查询域名历史 ip，<a href="http://toolbar.netcraft.com/">http://toolbar.netcraft.com</a><br>    超级ping：<a href="https://ping.aizhan.com/">https://ping.aizhan.com/</a>         <a href="http://ping.chinaz.com/">http://ping.chinaz.com/</a><br>    查子域名，因为有的子域名没有使用CDN<br>    参考文章：<a href="https://www.cnblogs.com/qiudabai/p/9763739.html">https://www.cnblogs.com/qiudabai/p/9763739.html</a><br>DNS:<a href="http://site.ip138.com/">http://site.ip138.com</a></p>
+<p>2.域名-&gt;whois<br>邮箱、注册人、公司、电话<br>备案：<a href="https://www.tianyancha.com/">https://www.tianyancha.com/</a></p>
+<p>3.google hack语法</p>
+<p>4.cms<br>常见cms:WordPress、Dedecms、Discuz、PhpWeb、PhpWind、Dvbbs、PhpCMS、ECShop、、SiteWeaver、AspCMS、帝国、Z-Blog等<br>在线工具：<br>BugScaner：<a href="http://whatweb.bugscaner.com/look/">http://whatweb.bugscaner.com/look/</a><br>云悉指纹：<a href="http://www.yunsee.cn/finger.html">http://www.yunsee.cn/finger.html</a><br>WhatWeb：<a href="https://whatweb.net/">https://whatweb.net/</a><br>火狐插件：<br>Wappalyzer<br>服务器类型：<br>TTL值：Windows的TTL值都是一般是128，Linux则是64，所以大于100的肯定是Windows，而几十的肯定是Linux<br>网站容器（中间件）<br>脚本类型<br>数据库类型（报错、端口）<br>常见搭配：<br>ASP和.NET：Microsoft SQL Server<br>PHP：MySQL、PostgreSQL<br>Java：Oracle、MySQL</p>
+<p>5.目录扫描（御剑、爬虫_rad_长亭爬虫、dirsearch）</p>
+<p>6.子域名<br>SubDomainBrute：<a href="https://github.com/lijiejie/subDomainsBrute">https://github.com/lijiejie/subDomainsBrute</a><br>Sublist3r：<a href="https://github.com/aboul3la/Sublist3r">https://github.com/aboul3la/Sublist3r</a><br>Layer（5.0增强版）：<a href="https://pan.baidu.com/s/1Jja4QK5BsAXJ0i0Ax8Ve2Q">https://pan.baidu.com/s/1Jja4QK5BsAXJ0i0Ax8Ve2Q</a> 密码:aup5<br><a href="https://d.chinacycc.com(大佬推荐的说好用的很,但是收费.)/">https://d.chinacycc.com（大佬推荐的说好用的很，但是收费。）</a><br>在线工具：<a href="http://z.zcjun.com/">http://z.zcjun.com/</a></p>
+<p>7.端口扫描</p>
+<p>8.waf识别<br>在kail中最常用的WAF扫描工具是wafw00f<br>wafw00f -l<br>#查看该工具能检测那些WAF<br>wafw00f <a href="http://www.baidu.com/">http://www.baidu.com</a></p>
+<p>github开源工具利用：<br><a href="https://zhuanlan.zhihu.com/p/53112370">https://zhuanlan.zhihu.com/p/53112370</a></p>
+]]></content>
+      <categories>
+        <category>常识</category>
       </categories>
   </entry>
   <entry>
@@ -110,7 +103,7 @@ DNS:http://site.ip138.com</code></pre>
   </entry>
   <entry>
     <title>docker容器搭建步骤</title>
-    <url>/2021/04/07/docker/</url>
+    <url>/2021/04/07/docker%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>Docker 要求 CentOS 系统的内核版本高于 3.10</p>
 <a id="more"></a>
 <p>uname -r 命令查看你当前的内核版本<br><img src="https://img-blog.csdnimg.cn/20210407115810233.png" alt="版本号"></p>
@@ -152,41 +145,18 @@ DNS:http://site.ip138.com</code></pre>
       </categories>
   </entry>
   <entry>
-    <title>vmware及kali的安装</title>
-    <url>/2020/11/11/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%BF%85%E4%B8%8D%E5%8F%AF%E5%B0%91/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>百度VMware官网下载解压包，不过下载的比较慢安装包我百度网盘在下面分享</p>
-<p>链接：<a href="https://pan.baidu.com/s/1ydpHq-KroaBm9KYtVIng2A">https://pan.baidu.com/s/1ydpHq-KroaBm9KYtVIng2A</a><br>提取码：1zqt<br>复制这段内容后打开百度网盘手机App，操作更方便哦</p>
-<p>复制然后打开百度网盘下载<br> <img src="https://img-blog.csdnimg.cn/2021050810411188.png" alt="在这里插入图片描述"><br>解压出来有这个安装包点击直接根据提示下一步<br>然后一直下一步就行<br> <img src="https://img-blog.csdnimg.cn/20210508104136843.png" alt="在这里插入图片描述"></p>
-<p>点击这个是生成序列号的软件<br>双击打开复制序列号就行，到这里VMware就安装完成啦<br><img src="https://img-blog.csdnimg.cn/20210508104152893.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p>然后双击打开图中文件就是VMware</p>
-<p>接下来下面是在VMware里面安装kali Linux<br>点击创建新的虚拟机<br> <img src="https://img-blog.csdnimg.cn/20210508104203955.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p>然后会出来如图，选择典型根据提示下一步</p>
-<p> <img src="https://img-blog.csdnimg.cn/20210508104216604.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p>然后下一步</p>
-<p> <img src="https://img-blog.csdnimg.cn/20210508104226893.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p>这里选择Linux根据如图提示继续下一步<br><img src="https://img-blog.csdnimg.cn/20210508104235638.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p>虚拟机名称自己随便起，位置看自己想放哪点击浏览选择位置，然后继续下一步<br> <img src="https://img-blog.csdnimg.cn/20210508104247865.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>然后默认点击下一步就行</p>
-<p><img src="https://img-blog.csdnimg.cn/20210508104301557.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p>点击自定义硬件<br> <img src="https://img-blog.csdnimg.cn/20210508104319334.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p>然后出来如图点击浏览找到下载的kali镜像ios<br><img src="https://img-blog.csdnimg.cn/20210508104339519.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p>然后点击下面关闭 完成就OK</p>
-<p>然后接下来点击开启此虚拟机<br>出现如图点击选择第一个graphical install模式确定<br>有的可能顺序不同找graphical install模式就行</p>
-<p> <img src="https://img-blog.csdnimg.cn/20210508104357908.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p>然后根据提示选择语言按确认<br> <img src="https://img-blog.csdnimg.cn/20210508104403989.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p>语言选择好到这安装组件<br> <img src="https://img-blog.csdnimg.cn/20210508104410742.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p>接下来主机名随便自己想填什么填什么<br> <img src="https://img-blog.csdnimg.cn/20210508104417188.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p>接下来是配置网络域名，可以空白看自己<br> <img src="https://img-blog.csdnimg.cn/20210508104424631.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p>接下来是用户名和密码根据自身写吧千万要记住<br>记住记住！！！！！密码一定要记住后面登录kali要用后几步图片省略</p>
-<p>密码账号好之后磁盘看自己这里推荐选择第一个。<br> <img src="https://img-blog.csdnimg.cn/20210508104433298.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210508104449665.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p>然后确定，这里出现问题应该较多。要是提示其他的话就找上一步的问题<br> <img src="https://img-blog.csdnimg.cn/20210508104457231.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p>接下来选择是继续下一步<br> <img src="https://img-blog.csdnimg.cn/20210508104502928.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p>这里继续下一步就行这里不填也可以自己随便填，继续之后等待时间较长<br> <img src="https://img-blog.csdnimg.cn/20210508104514612.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p>继续下一步就行</p>
-<p> <img src="https://img-blog.csdnimg.cn/20210508104519719.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p>这里根据自己需要选择工具，xfce是一定要选<br> <img src="https://img-blog.csdnimg.cn/20210508104527925.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+    <title>虚拟机必不可少</title>
+    <url>/2020/11/11/VMware+kali%E7%9A%84%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>相比对于学安全的虚拟机的重要性不用说都知道多重要了吧！！<a id="more"></a></p>
+<p>百度也是各种教程齐全、、</p>
+<p>虚拟机安装教程这里不多提百度都能出来</p>
+<p>百度网盘镜像分享链接放在这里</p>
+<p>kali镜像也包括在内!!!!</p>
+<p>复制这段内容后打开百度网盘App，操作更方便哦。</p>
+<p>链接:<a href="https://pan.baidu.com/s/1elQkD4rVsASygRJSTsxt5Q">https://pan.baidu.com/s/1elQkD4rVsASygRJSTsxt5Q</a> 提取码:u6fz</p>
 ]]></content>
       <categories>
-        <category>kali</category>
+        <category>虚拟机</category>
       </categories>
       <tags>
         <tag>安全必备</tag>
