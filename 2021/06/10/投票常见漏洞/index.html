@@ -26,18 +26,30 @@
     var CONFIG = {"hostname":"emptybottle.xyz","root":"/","images":"/images","scheme":"Muse","version":"8.0.2","exturl":false,"sidebar":{"position":"right"},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://emptybottle.xyz/about/index-1.html">
+  <meta name="description" content="这次的这个为网上的一个靶场">
+<meta property="og:type" content="article">
+<meta property="og:title" content="投票常见漏洞">
+<meta property="og:url" content="http://emptybottle.xyz/2021/06/10/%E6%8A%95%E7%A5%A8%E5%B8%B8%E8%A7%81%E6%BC%8F%E6%B4%9E/index.html">
 <meta property="og:site_name" content="Emptybottle的博客">
+<meta property="og:description" content="这次的这个为网上的一个靶场">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-11-12T08:48:43.000Z">
-<meta property="article:modified_time" content="2020-11-12T08:48:44.000Z">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210610164454885.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210610164327860.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210610164327901.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210610164327901.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210610164327935.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210610164327892.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210610164327898.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="article:published_time" content="2021-06-10T08:32:00.000Z">
+<meta property="article:modified_time" content="2021-06-10T08:48:16.052Z">
 <meta property="article:author" content="Emptybottle">
+<meta property="article:tag" content="工具">
+<meta property="article:tag" content="投票">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20210610164454885.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70#pic_center">
 
 
-<link rel="canonical" href="http://emptybottle.xyz/about/index-1">
+<link rel="canonical" href="http://emptybottle.xyz/2021/06/10/%E6%8A%95%E7%A5%A8%E5%B8%B8%E8%A7%81%E6%BC%8F%E6%B4%9E/">
 
 
 <script data-pjax class="page-configurations">
@@ -45,13 +57,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>about | Emptybottle的博客
-</title>
+  <title>投票常见漏洞 | Emptybottle的博客</title>
   
 
 
@@ -211,7 +222,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -224,6 +235,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <section class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%99%E6%AC%A1%E7%9A%84%E8%BF%99%E4%B8%AA%E4%B8%BA%E7%BD%91%E4%B8%8A%E7%9A%84%E4%B8%80%E4%B8%AA%E9%9D%B6%E5%9C%BA"><span class="nav-text">这次的这个为网上的一个靶场</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E7%82%B9%E5%87%BBa2019%E6%8A%95%E7%A5%A8%EF%BC%8C%E7%94%A8burp%E6%8A%93%E5%8C%85%E3%80%82"><span class="nav-text">1:点击a2019投票，用burp抓包。###</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E6%94%B9user-agent-%EF%BC%8C%E5%9B%A0%E4%B8%BA%E8%BF%99%E6%98%AF%E5%BE%AE%E4%BF%A1%E6%8A%95%E7%A5%A8-%E6%89%80%E6%9C%89%E6%94%B9%E4%B8%BA%E5%BE%AE%E4%BF%A1%E7%9A%84%E5%A4%B4"><span class="nav-text">2.改user-agent ，因为这是微信投票 所有改为微信的头</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-ctrl-l-%E6%88%96%E5%8F%B3%E5%87%BB-X-Forwarded-For-%E5%90%8E%E7%9A%84IP%E9%80%89%E4%B8%AD%E7%94%A8%E5%AD%97%E5%85%B8%E6%94%B9%E5%8F%98IP%E8%B7%91%E5%AD%97%E5%85%B8"><span class="nav-text">3.ctrl+l  或右击  X-Forwarded-For:后的IP选中用字典改变IP跑字典</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-payloads%E9%80%89%E5%AD%97%E5%85%B8-%E8%B7%91"><span class="nav-text">4.payloads选字典 跑</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E7%AD%89%E5%AD%97%E5%85%B8%E8%B7%91%E5%AE%8C"><span class="nav-text">5.等字典跑完</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-%E5%88%B7%E6%96%B0%E7%BD%91%E9%A1%B5"><span class="nav-text">6.刷新网页</span></a></li></ol></li></ol></div>
         </section>
         <!--/noindex-->
 
@@ -319,44 +331,149 @@
 </noscript>
 
 
-    <div class="main-inner page posts-expand">
+    <div class="main-inner post posts-expand">
       
-  
-  
 
       
 
-    
-    
-    
-    <div class="post-block" lang="zh-CN">
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://emptybottle.xyz/2021/06/10/%E6%8A%95%E7%A5%A8%E5%B8%B8%E8%A7%81%E6%BC%8F%E6%B4%9E/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Emptybottle">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Emptybottle的博客">
+    </span>
       <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          投票常见漏洞
+        </h1>
 
-<h1 class="post-title" itemprop="name headline">about
-</h1>
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
 
-<div class="post-meta-container">
+      <time title="创建时间：2021-06-10 16:32:00 / 修改时间：16:48:16" itemprop="dateCreated datePublished" datetime="2021-06-10T16:32:00+08:00">2021-06-10</time>
+    </span>
+
   
-
+      </div>
+      <div class="post-meta">
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>445</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
 </div>
 
-</header>
+        </div>
+      </header>
 
-      
-      
-      
-      <div class="post-body">
-          
-      </div>
-      
-      
-      
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="这次的这个为网上的一个靶场"><a href="#这次的这个为网上的一个靶场" class="headerlink" title="这次的这个为网上的一个靶场"></a>这次的这个为网上的一个靶场</h2><a id="more"></a>
+<p>如下图 a2015为第一名 a2019为第四名 一个微信只可投一票，请将a2019淦成第一名<br> <img src="https://img-blog.csdnimg.cn/20210610164454885.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<h3 id="1-点击a2019投票，用burp抓包。"><a href="#1-点击a2019投票，用burp抓包。" class="headerlink" title="1:点击a2019投票，用burp抓包。###"></a>1:点击a2019投票，用burp抓包。###</h3><p> <img src="https://img-blog.csdnimg.cn/20210610164327860.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<h3 id="2-改user-agent-，因为这是微信投票-所有改为微信的头"><a href="#2-改user-agent-，因为这是微信投票-所有改为微信的头" class="headerlink" title="2.改user-agent ，因为这是微信投票 所有改为微信的头"></a>2.改user-agent ，因为这是微信投票 所有改为微信的头</h3><p>Mozilla/5.0 (Linux; U; Android 4.3; zh-cn; SCH-I939D Build/JSS15J) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025469 Mobile Safari/533.1 MicroMessenger/6.2.5.51_rfe7d7c5.621 NetType/3G+ Language/zh_CN</p>
+<p>改X-Forwarded-For:IP<br> <img src="https://img-blog.csdnimg.cn/20210610164327901.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<h3 id="3-ctrl-l-或右击-X-Forwarded-For-后的IP选中用字典改变IP跑字典"><a href="#3-ctrl-l-或右击-X-Forwarded-For-后的IP选中用字典改变IP跑字典" class="headerlink" title="3.ctrl+l  或右击  X-Forwarded-For:后的IP选中用字典改变IP跑字典"></a>3.ctrl+l  或右击  X-Forwarded-For:后的IP选中用字典改变IP跑字典</h3><p> <img src="https://img-blog.csdnimg.cn/20210610164327901.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<h3 id="4-payloads选字典-跑"><a href="#4-payloads选字典-跑" class="headerlink" title="4.payloads选字典 跑"></a>4.payloads选字典 跑</h3><p> <img src="https://img-blog.csdnimg.cn/20210610164327935.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<h3 id="5-等字典跑完"><a href="#5-等字典跑完" class="headerlink" title="5.等字典跑完"></a>5.等字典跑完</h3><p> <img src="https://img-blog.csdnimg.cn/20210610164327892.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<h3 id="6-刷新网页"><a href="#6-刷新网页" class="headerlink" title="6.刷新网页"></a>6.刷新网页</h3><p><img src="https://img-blog.csdnimg.cn/20210610164327898.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<p>即可看到a2019为第一名 增加了401票 （127.0.0.1+字典跑的400次）</p>
+
     </div>
-    
 
     
     
     
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div>小小的玩耍！！！</div>
+  <button onclick="document.querySelector('.post-reward').classList.toggle('active');">
+    赞赏
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/wechatpay.png" alt="Emptybottle 微信">
+        <span>微信</span>
+      </div>
+      <div>
+        <img src="/images/alipay.png" alt="Emptybottle 支付宝">
+        <span>支付宝</span>
+      </div>
+
+  </div>
+</div>
+
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>原作者： </strong>Emptybottle
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://emptybottle.xyz/2021/06/10/%E6%8A%95%E7%A5%A8%E5%B8%B8%E8%A7%81%E6%BC%8F%E6%B4%9E/" title="投票常见漏洞">http://emptybottle.xyz/2021/06/10/投票常见漏洞/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/%E5%B7%A5%E5%85%B7/" rel="tag"># 工具</a>
+              <a href="/tags/%E6%8A%95%E7%A5%A8/" rel="tag"># 投票</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/05/10/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/" rel="prev" title="信息收集">
+                  <i class="fa fa-chevron-left"></i> 信息收集
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
 
 
       
