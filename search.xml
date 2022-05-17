@@ -3,7 +3,8 @@
   <entry>
     <title>投票常见漏洞</title>
     <url>/2021/06/10/%E6%8A%95%E7%A5%A8%E5%B8%B8%E8%A7%81%E6%BC%8F%E6%B4%9E/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="这次的这个为网上的一个靶场"><a href="#这次的这个为网上的一个靶场" class="headerlink" title="这次的这个为网上的一个靶场"></a>这次的这个为网上的一个靶场</h2><a id="more"></a>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>这次的这个为网上的一个靶场</p>
+<a id="more"></a>
 <p>如下图 a2015为第一名 a2019为第四名 一个微信只可投一票，请将a2019淦成第一名<br> <img src="https://img-blog.csdnimg.cn/20210610164454885.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
 <h3 id="1-点击a2019投票，用burp抓包。"><a href="#1-点击a2019投票，用burp抓包。" class="headerlink" title="1:点击a2019投票，用burp抓包。###"></a>1:点击a2019投票，用burp抓包。###</h3><p> <img src="https://img-blog.csdnimg.cn/20210610164327860.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
 <h3 id="2-改user-agent-，因为这是微信投票-所有改为微信的头"><a href="#2-改user-agent-，因为这是微信投票-所有改为微信的头" class="headerlink" title="2.改user-agent ，因为这是微信投票 所有改为微信的头"></a>2.改user-agent ，因为这是微信投票 所有改为微信的头</h3><p>Mozilla/5.0 (Linux; U; Android 4.3; zh-cn; SCH-I939D Build/JSS15J) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025469 Mobile Safari/533.1 MicroMessenger/6.2.5.51_rfe7d7c5.621 NetType/3G+ Language/zh_CN</p>
@@ -14,13 +15,15 @@
 <h3 id="6-刷新网页"><a href="#6-刷新网页" class="headerlink" title="6.刷新网页"></a>6.刷新网页</h3><p><img src="https://img-blog.csdnimg.cn/20210610164327898.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
 <p>即可看到a2019为第一名 增加了401票 （127.0.0.1+字典跑的400次）</p>
 ]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
       <tags>
-        <tag>工具</tag>
-        <tag>投票</tag>
+        <tag>笔记</tag>
       </tags>
   </entry>
   <entry>
-    <title>信息收集</title>
+    <title>kali搭建教程</title>
     <url>/2021/05/10/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>百度VMware官网下载解压包</p>
 <a id="more"></a>，不过下载的比较慢安装包我百度网盘在下面分享
@@ -55,6 +58,12 @@
 <p> <img src="https://img-blog.csdnimg.cn/20210508104519719.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 <p>这里根据自己需要选择工具，xfce是一定要选<br> <img src="https://img-blog.csdnimg.cn/20210508104527925.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 ]]></content>
+      <categories>
+        <category>环境</category>
+      </categories>
+      <tags>
+        <tag>kali</tag>
+      </tags>
   </entry>
   <entry>
     <title>sqlmap</title>
@@ -75,6 +84,9 @@
 <p>sqlmap -u “<a href="http://192.168.19.130/sqli-labs/Less-8/?id=1%E2%80%9D-D">http://192.168.19.130/sqli-labs/Less-8/?id=1”-D</a> mysql –T user –C password –-dump//查询password字段中的数据<br><img src="https://img-blog.csdnimg.cn/2021040919285844.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 <p>表中password数据就出来了 当然这是加密的百度解密就行</p>
 ]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
   </entry>
   <entry>
     <title>win8蓝屏 ，Kali复现cve-2019-0708</title>
@@ -94,7 +106,7 @@
 <p>此时，目标主机已经蓝屏<br> <img src="https://img-blog.csdnimg.cn/20210409180747136.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzIyMzQz,size_16,color_FFFFFF,t_70" alt="目标主机蓝屏，攻击成功"></p>
 ]]></content>
       <categories>
-        <category>kali攻击利用</category>
+        <category>笔记</category>
       </categories>
   </entry>
   <entry>
@@ -106,7 +118,7 @@
 <p>21,22,23,25,43,53,67,68,69,80,81-89,110,135,137,138,139,143,161,162,389,443,445,<br>465,873,993,995,1080,1099,1158,1352,1433,1434,1521,1863,2049,2100,2181,2375,3128,<br>3306,3389,3690,4750,4848,5000,5432,5632,5900,5901,5984,6379,7001,8009，8069,8080,<br>8081-8089,8161,8888,9001,9043,9080,9090,9200,9300,10000-10002,11211,27017,<br>50000,50070</p>
 ]]></content>
       <categories>
-        <category>常识</category>
+        <category>端口</category>
       </categories>
   </entry>
   <entry>
@@ -136,7 +148,7 @@
 <p>Intitle:管理员 inurl:login<br>符号<br>-keyword  强制结果不出现该关键字<br>*keyword  模糊查询，强制结果出现此关键字<br>“keyword   强制搜索结果出现此关键字</p>
 ]]></content>
       <categories>
-        <category>常识</category>
+        <category>搜索语法</category>
       </categories>
   </entry>
   <entry>
@@ -163,7 +175,7 @@
 <p>因为github访问下载会特别慢  。  这里还有一种方法 ，也可以  离线下载下来放到文件夹就行 。</p>
 ]]></content>
       <categories>
-        <category>环境</category>
+        <category>工具</category>
       </categories>
   </entry>
   <entry>
@@ -179,7 +191,7 @@
 <p>3.选择受害者ip进行攻击 192.168.1.4受害者ip<br>arpspoof -i eth0 -t 192.168.1.4 192.168.1.1<br><img src="https://img-blog.csdnimg.cn/20210407110426917.jpeg" alt="选择想攻击的IP"></p>
 ]]></content>
       <categories>
-        <category>kali工具利用</category>
+        <category>笔记</category>
       </categories>
   </entry>
   <entry>
@@ -193,8 +205,8 @@
 <p>复制这段内容后打开百度网盘App，操作更方便哦。</p>
 <p>链接:<a href="https://pan.baidu.com/s/1elQkD4rVsASygRJSTsxt5Q">https://pan.baidu.com/s/1elQkD4rVsASygRJSTsxt5Q</a> 提取码:u6fz</p>
 ]]></content>
-      <tags>
-        <tag>安全必备</tag>
-      </tags>
+      <categories>
+        <category>工具</category>
+      </categories>
   </entry>
 </search>
