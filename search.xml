@@ -9,6 +9,12 @@
 <h6 id="3-数据库注入练习平台"><a href="#3-数据库注入练习平台" class="headerlink" title="3. 数据库注入练习平台"></a>3. 数据库注入练习平台</h6><p><a href="https://github.com/Audi-1/sqli-labs">https://github.com/Audi-1/sqli-labs</a></p>
 <h6 id="4-用node编写的漏洞练习平台，like-OWASP-Node-Goat"><a href="#4-用node编写的漏洞练习平台，like-OWASP-Node-Goat" class="headerlink" title="4. 用node编写的漏洞练习平台，like OWASP Node Goat"></a>4. 用node编写的漏洞练习平台，like OWASP Node Goat</h6><p><a href="https://github.com/cr0hn/vulnerable-node">https://github.com/cr0hn/vulnerable-node</a></p>
 <h5 id="三丶黑客论坛："><a href="#三丶黑客论坛：" class="headerlink" title="三丶黑客论坛："></a>三丶黑客论坛：</h5><h6 id="1-Hack-Forums：-https-wiki-hackforums-net"><a href="#1-Hack-Forums：-https-wiki-hackforums-net" class="headerlink" title="1. Hack Forums：        https://wiki.hackforums.net/"></a>1. Hack Forums：        <a href="https://wiki.hackforums.net/">https://wiki.hackforums.net/</a></h6><h6 id="2-Evil-Zone：-https-evilzone-org"><a href="#2-Evil-Zone：-https-evilzone-org" class="headerlink" title="2. Evil Zone：        https://evilzone.org/"></a>2. Evil Zone：        <a href="https://evilzone.org/">https://evilzone.org/</a></h6><h6 id="3-Hack-This-Site：-https-www-hackthissite-org"><a href="#3-Hack-This-Site：-https-www-hackthissite-org" class="headerlink" title="3. Hack This Site：        https://www.hackthissite.org/"></a>3. Hack This Site：        <a href="https://www.hackthissite.org/">https://www.hackthissite.org/</a></h6><h6 id="4-Hellbound-Hackers：-https-hbh-sh-home"><a href="#4-Hellbound-Hackers：-https-hbh-sh-home" class="headerlink" title="4. Hellbound Hackers：    https://hbh.sh/home"></a>4. Hellbound Hackers：    <a href="https://hbh.sh/home">https://hbh.sh/home</a></h6><h6 id="5-Exploit-DB：-https-www-exploit-db-com"><a href="#5-Exploit-DB：-https-www-exploit-db-com" class="headerlink" title="5. Exploit-DB：        https://www.exploit-db.com/"></a>5. Exploit-DB：        <a href="https://www.exploit-db.com/">https://www.exploit-db.com/</a></h6>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>信息收集</tag>
+      </tags>
   </entry>
   <entry>
     <title>FPT内部命令</title>

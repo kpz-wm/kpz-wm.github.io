@@ -6,7 +6,7 @@
   <link href="http://emptybottle.xyz/atom.xml" rel="self"/>
   
   <link href="http://emptybottle.xyz/"/>
-  <updated>2022-05-24T11:27:22.716Z</updated>
+  <updated>2022-05-24T11:36:01.530Z</updated>
   <id>http://emptybottle.xyz/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title>web收集</title>
     <link href="http://emptybottle.xyz/2022/05/24/web%E6%94%B6%E9%9B%86/"/>
     <id>http://emptybottle.xyz/2022/05/24/web%E6%94%B6%E9%9B%86/</id>
-    <published>2022-05-24T10:17:19.000Z</published>
-    <updated>2022-05-24T11:27:22.716Z</updated>
+    <published>2022-05-24T10:17:00.000Z</published>
+    <updated>2022-05-24T11:36:01.530Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h5 id="一丶信息"><a href="#一丶信息" class="headerlink" title="一丶信息"></a>一丶信息</h5><a id="more"></a><h6 id="1-棱角：-https-forum-ywhack-com"><a href="#1-棱角：-https-forum-ywhack-com" class="headerlink" title="1. 棱角：            https://forum.ywhack.com/"></a>1. 棱角：            <a href="https://forum.ywhack.com/">https://forum.ywhack.com/</a></h6><h6 id="2-企业-ATT-amp-CK-矩阵：-https-attack-mitre-org"><a href="#2-企业-ATT-amp-CK-矩阵：-https-attack-mitre-org" class="headerlink" title="2. 企业 ATT &amp; CK 矩阵：    https://attack.mitre.org/"></a>2. 企业 ATT &amp; CK 矩阵：    <a href="https://attack.mitre.org/">https://attack.mitre.org/</a></h6><h6 id="3-零零信安：-https-0-zone"><a href="#3-零零信安：-https-0-zone" class="headerlink" title="3. 零零信安：        https://0.zone/"></a>3. 零零信安：        <a href="https://0.zone/">https://0.zone/</a></h6><h6 id="4-黑客街：-https-www-hackjie-com-category-E5-9B-BD-E5-A4-96-E5-B9-B3-E5-8F-B0"><a href="#4-黑客街：-https-www-hackjie-com-category-E5-9B-BD-E5-A4-96-E5-B9-B3-E5-8F-B0" class="headerlink" title="4. 黑客街：        https://www.hackjie.com/category/%E5%9B%BD%E5%A4%96%E5%B9%B3%E5%8F%B0/"></a>4. 黑客街：        <a href="https://www.hackjie.com/category/%E5%9B%BD%E5%A4%96%E5%B9%B3%E5%8F%B0/">https://www.hackjie.com/category/%E5%9B%BD%E5%A4%96%E5%B9%B3%E5%8F%B0/</a></h6><h5 id="二丶靶场"><a href="#二丶靶场" class="headerlink" title="二丶靶场"></a>二丶靶场</h5><h6 id="1-WebGoat漏洞练习环境"><a href="#1-WebGoat漏洞练习环境" class="headerlink" title="1. WebGoat漏洞练习环境"></a>1. WebGoat漏洞练习环境</h6><p><a href="https://github.com/WebGoat/WebGoat">https://github.com/WebGoat/WebGoat</a><br><a href="https://github.com/WebGoat/WebGoat-Legacy">https://github.com/WebGoat/WebGoat-Legacy</a></p><h6 id="2-Damn-Vulnerable-Web-Application-漏洞练习平台"><a href="#2-Damn-Vulnerable-Web-Application-漏洞练习平台" class="headerlink" title="2. Damn Vulnerable Web Application(漏洞练习平台)"></a>2. Damn Vulnerable Web Application(漏洞练习平台)</h6><p><a href="https://dvwa.co.uk/">https://dvwa.co.uk/</a><br><a href="https://github.com/RandomStorm/DVWA">https://github.com/RandomStorm/DVWA</a></p><h6 id="3-数据库注入练习平台"><a href="#3-数据库注入练习平台" class="headerlink" title="3. 数据库注入练习平台"></a>3. 数据库注入练习平台</h6><p><a href="https://github.com/Audi-1/sqli-labs">https://github.com/Audi-1/sqli-labs</a></p><h6 id="4-用node编写的漏洞练习平台，like-OWASP-Node-Goat"><a href="#4-用node编写的漏洞练习平台，like-OWASP-Node-Goat" class="headerlink" title="4. 用node编写的漏洞练习平台，like OWASP Node Goat"></a>4. 用node编写的漏洞练习平台，like OWASP Node Goat</h6><p><a href="https://github.com/cr0hn/vulnerable-node">https://github.com/cr0hn/vulnerable-node</a></p><h5 id="三丶黑客论坛："><a href="#三丶黑客论坛：" class="headerlink" title="三丶黑客论坛："></a>三丶黑客论坛：</h5><h6 id="1-Hack-Forums：-https-wiki-hackforums-net"><a href="#1-Hack-Forums：-https-wiki-hackforums-net" class="headerlink" title="1. Hack Forums：        https://wiki.hackforums.net/"></a>1. Hack Forums：        <a href="https://wiki.hackforums.net/">https://wiki.hackforums.net/</a></h6><h6 id="2-Evil-Zone：-https-evilzone-org"><a href="#2-Evil-Zone：-https-evilzone-org" class="headerlink" title="2. Evil Zone：        https://evilzone.org/"></a>2. Evil Zone：        <a href="https://evilzone.org/">https://evilzone.org/</a></h6><h6 id="3-Hack-This-Site：-https-www-hackthissite-org"><a href="#3-Hack-This-Site：-https-www-hackthissite-org" class="headerlink" title="3. Hack This Site：        https://www.hackthissite.org/"></a>3. Hack This Site：        <a href="https://www.hackthissite.org/">https://www.hackthissite.org/</a></h6><h6 id="4-Hellbound-Hackers：-https-hbh-sh-home"><a href="#4-Hellbound-Hackers：-https-hbh-sh-home" class="headerlink" title="4. Hellbound Hackers：    https://hbh.sh/home"></a>4. Hellbound Hackers：    <a href="https://hbh.sh/home">https://hbh.sh/home</a></h6><h6 id="5-Exploit-DB：-https-www-exploit-db-com"><a href="#5-Exploit-DB：-https-www-exploit-db-com" class="headerlink" title="5. Exploit-DB：        https://www.exploit-db.com/"></a>5. Exploit-DB：        <a href="https://www.exploit-db.com/">https://www.exploit-db.com/</a></h6>]]></content>
     
@@ -30,6 +30,10 @@
     
     
     
+    <category term="工具" scheme="http://emptybottle.xyz/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="信息收集" scheme="http://emptybottle.xyz/tags/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/"/>
     
   </entry>
   
