@@ -18,15 +18,15 @@
     var CONFIG = {"hostname":"emptybottle.xyz","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left"},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="mysql -h主机地址 -u用户名 －p密码">
+  <meta name="description" content="一 、DDL（对数据库和表的操作）">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MYSQL命令">
 <meta property="og:url" content="http://emptybottle.xyz/2022/05/19/MYSQL%E5%91%BD%E4%BB%A4/index.html">
 <meta property="og:site_name" content="Emptybottle的博客">
-<meta property="og:description" content="mysql -h主机地址 -u用户名 －p密码">
+<meta property="og:description" content="一 、DDL（对数据库和表的操作）">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-05-19T01:48:00.000Z">
-<meta property="article:modified_time" content="2022-05-19T02:08:19.573Z">
+<meta property="article:modified_time" content="2022-06-13T14:03:02.820Z">
 <meta property="article:author" content="Emptybottle">
 <meta property="article:tag" content="mysql指令">
 <meta name="twitter:card" content="summary">
@@ -225,10 +225,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2022-05-19 09:48:00 / 修改时间：10:08:19" itemprop="dateCreated datePublished" datetime="2022-05-19T09:48:00+08:00">2022-05-19</time>
+              <time title="创建时间：2022-05-19 09:48:00" itemprop="dateCreated datePublished" datetime="2022-05-19T09:48:00+08:00">2022-05-19</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-06-13 22:03:02" itemprop="dateModified" datetime="2022-06-13T22:03:02+08:00">2022-06-13</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -259,14 +265,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>661</span>
+              <span>3.3k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>3 分钟</span>
             </span>
 
         </div>
@@ -280,33 +286,31 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <ol>
-<li>mysql -h主机地址 -u用户名 －p密码 <a id="more"></a>
-
-
+        <h4 id="一-、DDL（对数据库和表的操作）"><a href="#一-、DDL（对数据库和表的操作）" class="headerlink" title="一 、DDL（对数据库和表的操作）"></a>一 、DDL（对数据库和表的操作）</h4><a id="more"></a>
+<ol>
+<li><p>mysql -h主机地址 -u用户名 －p密码 </p>
+<pre><code>连接MYSQL;如果刚安装好MYSQL，超级用户root是没有密码的。</code></pre>
+<p>　　  （例：mysql -h110.110.110.110 -Uroot -P123456）<br>　　       （注:u与root可以不用加空格，其它也一样）</p>
 </li>
-</ol>
-<pre><code>   连接MYSQL;如果刚安装好MYSQL，超级用户root是没有密码的。</code></pre>
-<p>　　  （例：mysql -h110.110.110.110 -Uroot -P123456）<br>　　       （注:u与root可以不用加空格，其它也一样）<br>2. exit 退出MYSQL<br>3. mysqladmin -u用户名 -p旧密码 password 新密码 修改密码<br>4. grant select on 数据库.* to 用户名@登录主机 identified by “密            码”;增加新用户。</p>
+<li><p>exit 退出MYSQL</p>
+</li>
+<li><p>mysqladmin -u用户名 -p旧密码 password 新密码 修改密码</p>
+</li>
+<li><p>grant select on 数据库.* to 用户名@登录主机 identified by “密            码”;增加新用户。</p>
 <!--more-->
 
-<pre><code>（注意：和上面不同，下面的因为是MYSQL环境中的命令，所以后面都带一个分号作为命令结束符）</code></pre>
-<ol start="5">
-<li>show databases; 显示数据库列表。<!--more-->
+<p> （注意：和上面不同，下面的因为是MYSQL环境中的命令，所以后面都带一个分号作为命令结束符）</p>
+</li>
+<li><p>show databases; 显示数据库列表。</p>
+<!--more-->
 
 
 </li>
 </ol>
 <pre><code>（刚开始时才两个数据库：mysql和test。mysql库很重要它里面有MYSQL的系统信息，我们改密码和新增用户，实际上就是用这个库进行操作。）</code></pre>
-<ol start="6">
-<li>use mysql；使用数据库</li>
+<ol start="7">
 <li>show tables; 显示库中的数据表</li>
 <li>describe 表名; 显示数据表的结构</li>
-<li>create database 库名; 建库</li>
-<li>use 库名；</li>
-<li>create table 表名 (字段设定列表)； 建表</li>
-<li>drop database 库名;</li>
-<li>drop table 表名； 删库和删表</li>
 <li>delete from 表名; 将表中记录清空</li>
 <li>select * from 表名; 显示表中的记录</li>
 <li>mysqldump –opt school&gt;school.bbb 备份数据库：<!--more-->
@@ -315,6 +319,80 @@
 </li>
 </ol>
 <pre><code>（命令在DOS的mysqlin目录下执行）;注释:将数据库school备份到school.bbb文件，school.bbb是一个文本文件，文件名任取，打开看看你会有新发现。</code></pre>
+<h5 id="1-创建数据库和表"><a href="#1-创建数据库和表" class="headerlink" title="1. 创建数据库和表"></a>1. 创建数据库和表</h5><p>create table 表名 (字段设定列表);<br>create database 库名; </p>
+<h5 id="2-删除数据库和表"><a href="#2-删除数据库和表" class="headerlink" title="2. 删除数据库和表"></a>2. 删除数据库和表</h5><p>drop database 库名;<br>drop table 表名;</p>
+<h5 id="3-使用数据库"><a href="#3-使用数据库" class="headerlink" title="3. 使用数据库"></a>3. 使用数据库</h5><p>use mysql；</p>
+<h5 id="4-创建新表"><a href="#4-创建新表" class="headerlink" title="4. 创建新表"></a>4. 创建新表</h5><p> create table 表名 (字段设定列表);<br>create table tabname（<br>字段名1 类型，<br>字段名2 类型,<br>字段名3 类型,…）;<br>例：CREATE TABLE student(<br>stu_id INT,<br>stu_name VARCHAR(10),<br>stu_sex VARCHAR(1),<br>stu_age INT,<br>stu_class VARCHAR(20));</p>
+<h5 id="5-根据已有的表创建新表"><a href="#5-根据已有的表创建新表" class="headerlink" title="5. 根据已有的表创建新表"></a>5. 根据已有的表创建新表</h5><p>A：create table 新表名 like 旧表名（使用旧表创建新表）<br>B：create table 新表名 as select 列名1,列名2… from 旧表名 definition only</p>
+<h5 id="6-删除表"><a href="#6-删除表" class="headerlink" title="6. 删除表"></a>6. 删除表</h5><p>drop table tabname;</p>
+<h5 id="7-显示表的属性信息"><a href="#7-显示表的属性信息" class="headerlink" title="7. 显示表的属性信息"></a>7. 显示表的属性信息</h5><p>desc 表名;</p>
+<h5 id="8-增加一个列名"><a href="#8-增加一个列名" class="headerlink" title="8. 增加一个列名"></a>8. 增加一个列名</h5><p>alter table 表名 add 列名 类型<br>指定列名后面添加列名<br>alter table 表名 add 已有列名 after 列名 类型<br>first：第一个，before：前一个，end：最后</p>
+<h5 id="9-删除一个列名"><a href="#9-删除一个列名" class="headerlink" title="9. 删除一个列名"></a>9. 删除一个列名</h5><p>alter table 表名 drop 列名</p>
+<h5 id="10-修改一个列名"><a href="#10-修改一个列名" class="headerlink" title="10. 修改一个列名"></a>10. 修改一个列名</h5><p>alter table 表名 change 旧列名 新列名 类型</p>
+<h5 id="11-修改类型"><a href="#11-修改类型" class="headerlink" title="11. 修改类型"></a>11. 修改类型</h5><p>alter table 表名 modify 列名（已有） 新的类型</p>
+<h5 id="12-添加主键"><a href="#12-添加主键" class="headerlink" title="12. 添加主键"></a>12. 添加主键</h5><p>Alter table 表名 add primary key（列名）<br>删除主键：Alter table 表名 drop primary key（列名）</p>
+<h5 id="13-添加外键"><a href="#13-添加外键" class="headerlink" title="13. 添加外键"></a>13. 添加外键</h5><p>alter table 表名 add foreign key（列名） references 表名（主键）<br>删除外键：需要找到外键特有的名称</p>
+<h5 id="14-约束类型"><a href="#14-约束类型" class="headerlink" title="14. 约束类型"></a>14. 约束类型</h5><p>①not null：非空约束<br>②unique：唯一约束<br>③primary key：主键<br>④foreign key：外键<br>⑤auto_increment：自增长<br>⑥default：设置默认值 例：default ‘值’</p>
+<h4 id="二、DQL（查询语句）"><a href="#二、DQL（查询语句）" class="headerlink" title="二、DQL（查询语句）"></a>二、DQL（查询语句）</h4><p>关键字：</p>
+<ol>
+<li>or：或</li>
+<li>and：和</li>
+<li>having：分组后的附加条件</li>
+<li>group by：分组</li>
+<li>order by：排序：asc：正序，desc：倒序</li>
+<li>in：存在于某个值中</li>
+<li>not in：不存在与某个值中</li>
+<li>inner join … on链接多表</li>
+<li>left join … on：左外连接</li>
+<li>right join … on：右外连接</li>
+<li>left（right，inner） out join … on：去重</li>
+<li>count：计数</li>
+<li>AVG：平均值</li>
+<li>sum：求和</li>
+<li>max：最大值</li>
+<li>min：最小值</li>
+<li>like ‘关键字%’：取含有关键字的值</li>
+<li>distinct：去重</li>
+<li>round：四舍五入</li>
+<li>where 1=1：全选</li>
+<li>where 1=2：全不选</li>
+<li>limit 1,5：从第二行开始显示5条数据</li>
+<li>top 10：select top 10 * from 表名：显示前十条数据</li>
+<li>newid（）：随机</li>
+</ol>
+<h5 id="1-选择查询："><a href="#1-选择查询：" class="headerlink" title="1. 选择查询："></a>1. 选择查询：</h5><p>select * from 表名 where 范围</p>
+<h5 id="2-完全查询："><a href="#2-完全查询：" class="headerlink" title="2.完全查询："></a>2.完全查询：</h5><p>select * from 表名</p>
+<h5 id="3-模糊查询："><a href="#3-模糊查询：" class="headerlink" title="3.模糊查询："></a>3.模糊查询：</h5><p>select * from 表名 where 列名 like ‘%value%’（查询包含value的值）</p>
+<h5 id="4-排序查询（倒序，默认为正序）："><a href="#4-排序查询（倒序，默认为正序）：" class="headerlink" title="4.排序查询（倒序，默认为正序）："></a>4.排序查询（倒序，默认为正序）：</h5><p>select * from 表名 order by 列名 desc</p>
+<h5 id="5-计数查询："><a href="#5-计数查询：" class="headerlink" title="5.计数查询："></a>5.计数查询：</h5><p>select count as 别名 from 表名</p>
+<h5 id="6-求和查询："><a href="#6-求和查询：" class="headerlink" title="6.求和查询："></a>6.求和查询：</h5><p>select sum（field） as 别名 from 表名</p>
+<h5 id="7-平均值查询："><a href="#7-平均值查询：" class="headerlink" title="7.平均值查询："></a>7.平均值查询：</h5><p>select avg（filed） as 别名 from 表名</p>
+<h5 id="8-最大值查询："><a href="#8-最大值查询：" class="headerlink" title="8.最大值查询："></a>8.最大值查询：</h5><p>select max（filed） as 别名 from 表名</p>
+<h5 id="9-最小值查询："><a href="#9-最小值查询：" class="headerlink" title="9.最小值查询："></a>9.最小值查询：</h5><p>select min（filed） as 别名 from 表名</p>
+<h5 id="10-四舍五入查询："><a href="#10-四舍五入查询：" class="headerlink" title="10.四舍五入查询："></a>10.四舍五入查询：</h5><p>select round（min（filed），要保留的小数位数） as 别名 from 表名</p>
+<h5 id="11-去重查询："><a href="#11-去重查询：" class="headerlink" title="11.去重查询："></a>11.去重查询：</h5><p>select distinct 列名 from 表名</p>
+<h5 id="12-分组查询："><a href="#12-分组查询：" class="headerlink" title="12.分组查询："></a>12.分组查询：</h5><p>select * from 表名 group by 列名</p>
+<h5 id="13-多条件查询："><a href="#13-多条件查询：" class="headerlink" title="13.多条件查询："></a>13.多条件查询：</h5><p>select * from 表名 where 列名=‘范围’ and 列名=‘范围’</p>
+<h5 id="14-不确定条件查询："><a href="#14-不确定条件查询：" class="headerlink" title="14.不确定条件查询："></a>14.不确定条件查询：</h5><p>select * from 表名 where 列名=‘范围’ or 列名=‘范围’</p>
+<h5 id="15-多条件分组求值查询："><a href="#15-多条件分组求值查询：" class="headerlink" title="15.多条件分组求值查询："></a>15.多条件分组求值查询：</h5><p>select 列名，min（filed）from 表名 where 列名=‘范围’ group by 列名 having sum（列名）</p>
+<h5 id="16-子查询（子查询的结果作为主查询的条件）："><a href="#16-子查询（子查询的结果作为主查询的条件）：" class="headerlink" title="16.子查询（子查询的结果作为主查询的条件）："></a>16.子查询（子查询的结果作为主查询的条件）：</h5><p>select * from 表名 where=（select id from 表名 where 列名=‘范围’）</p>
+<h5 id="17-连表查询（内连接）："><a href="#17-连表查询（内连接）：" class="headerlink" title="17.连表查询（内连接）："></a>17.连表查询（内连接）：</h5><p>select * from 表名 inner join 表名 on 主键=外键（必须有主外键）</p>
+<h5 id="18-连表查询（内连接）（去重）："><a href="#18-连表查询（内连接）（去重）：" class="headerlink" title="18.连表查询（内连接）（去重）："></a>18.连表查询（内连接）（去重）：</h5><p>select * from 表名 inner out join 表名 on 主键=外键（必须有主外键）<br>注：内连接只显示相关联的数据</p>
+<h5 id="19-连表查询（左外连接）（显示左表的全部信息和右表相关联的信息）："><a href="#19-连表查询（左外连接）（显示左表的全部信息和右表相关联的信息）：" class="headerlink" title="19.连表查询（左外连接）（显示左表的全部信息和右表相关联的信息）："></a>19.连表查询（左外连接）（显示左表的全部信息和右表相关联的信息）：</h5><p>select * from 表名 left join 表名 on 主键=外键（必须有主外键）</p>
+<h5 id="20-连表查询（右外连接）（显示右表的全部信息和左表相关联的信息）："><a href="#20-连表查询（右外连接）（显示右表的全部信息和左表相关联的信息）：" class="headerlink" title="20.连表查询（右外连接）（显示右表的全部信息和左表相关联的信息）："></a>20.连表查询（右外连接）（显示右表的全部信息和左表相关联的信息）：</h5><p>select * from 表名 right join 表名 on 主键=外键（必须有主外键）</p>
+<h5 id="21-连表查询（全外连接）（显示两个表中的所有记录）："><a href="#21-连表查询（全外连接）（显示两个表中的所有记录）：" class="headerlink" title="21.连表查询（全外连接）（显示两个表中的所有记录）："></a>21.连表查询（全外连接）（显示两个表中的所有记录）：</h5><p>select * from 表名 full/cross join 表名 on 主键=外键（必须有主外键）</p>
+<h5 id="22-说明：几个高级查询运算词"><a href="#22-说明：几个高级查询运算词" class="headerlink" title="22.说明：几个高级查询运算词"></a>22.说明：几个高级查询运算词</h5><pre><code>A：union（结合两个结果表并消除其中的重复行而派生出另一个表）
+例：select name from 表名1 union select name from 表名2（去除name的重    复行）
+B：except（通过包括所有在 TABLE1 中但不在 TABLE2 中的行并消除所有重复行        而派生出一个结果表）
+C：intersect（通过只包括 TABLE1 和 TABLE2 中都有的行并消除所有重复行而派    生出一个结果表）
+注：当这三个运算符与all一起使用时不消除重复行</code></pre>
+<h4 id="三、DML（数据操作语句：插入、修改、删除）"><a href="#三、DML（数据操作语句：插入、修改、删除）" class="headerlink" title="三、DML（数据操作语句：插入、修改、删除）"></a>三、DML（数据操作语句：插入、修改、删除）</h4><ol>
+<li>数据插入</li>
+</ol>
+<p>完全插入：insert into 表名 values（值1,值2,值3,…）<br>选择插入：insert into 表名（列名1,列名2,列名,3…） values（值1,值2,值3,…）<br>批量插入：insert into 表名 values（值1,值2,值3,…）,（值1,值2,值3,…）,（值1,值2,值3,…）…<br>注1：完全插入可以省略列名，但是值必须包含所有字段，批量插入类同<br>注2：选择插入必须选择需要插入的字段，选择对应字段的值，批量插入类同<br>2. 修改语句</p>
+<p>update 表名 set 列名=‘值’ where 列名=‘范围’<br>where 1=1（全选）<br>where 1=2（全不选）<br>注：不加where条件为修改所有指定列的值<br>3. 删除语句</p>
+<p>delete from 表名 where 列名=‘范围’</p>
+<pre><code> 注：不加where条件为删除所有的值</code></pre>
 
     </div>
 
@@ -465,6 +543,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%80-%E3%80%81DDL%EF%BC%88%E5%AF%B9%E6%95%B0%E6%8D%AE%E5%BA%93%E5%92%8C%E8%A1%A8%E7%9A%84%E6%93%8D%E4%BD%9C%EF%BC%89"><span class="nav-number">1.</span> <span class="nav-text">一 、DDL（对数据库和表的操作）</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E5%BA%93%E5%92%8C%E8%A1%A8"><span class="nav-number">1.1.</span> <span class="nav-text">1. 创建数据库和表</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-%E5%88%A0%E9%99%A4%E6%95%B0%E6%8D%AE%E5%BA%93%E5%92%8C%E8%A1%A8"><span class="nav-number">1.2.</span> <span class="nav-text">2. 删除数据库和表</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-%E4%BD%BF%E7%94%A8%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="nav-number">1.3.</span> <span class="nav-text">3. 使用数据库</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-%E5%88%9B%E5%BB%BA%E6%96%B0%E8%A1%A8"><span class="nav-number">1.4.</span> <span class="nav-text">4. 创建新表</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5-%E6%A0%B9%E6%8D%AE%E5%B7%B2%E6%9C%89%E7%9A%84%E8%A1%A8%E5%88%9B%E5%BB%BA%E6%96%B0%E8%A1%A8"><span class="nav-number">1.5.</span> <span class="nav-text">5. 根据已有的表创建新表</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#6-%E5%88%A0%E9%99%A4%E8%A1%A8"><span class="nav-number">1.6.</span> <span class="nav-text">6. 删除表</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#7-%E6%98%BE%E7%A4%BA%E8%A1%A8%E7%9A%84%E5%B1%9E%E6%80%A7%E4%BF%A1%E6%81%AF"><span class="nav-number">1.7.</span> <span class="nav-text">7. 显示表的属性信息</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#8-%E5%A2%9E%E5%8A%A0%E4%B8%80%E4%B8%AA%E5%88%97%E5%90%8D"><span class="nav-number">1.8.</span> <span class="nav-text">8. 增加一个列名</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#9-%E5%88%A0%E9%99%A4%E4%B8%80%E4%B8%AA%E5%88%97%E5%90%8D"><span class="nav-number">1.9.</span> <span class="nav-text">9. 删除一个列名</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#10-%E4%BF%AE%E6%94%B9%E4%B8%80%E4%B8%AA%E5%88%97%E5%90%8D"><span class="nav-number">1.10.</span> <span class="nav-text">10. 修改一个列名</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#11-%E4%BF%AE%E6%94%B9%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.11.</span> <span class="nav-text">11. 修改类型</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#12-%E6%B7%BB%E5%8A%A0%E4%B8%BB%E9%94%AE"><span class="nav-number">1.12.</span> <span class="nav-text">12. 添加主键</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#13-%E6%B7%BB%E5%8A%A0%E5%A4%96%E9%94%AE"><span class="nav-number">1.13.</span> <span class="nav-text">13. 添加外键</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#14-%E7%BA%A6%E6%9D%9F%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.14.</span> <span class="nav-text">14. 约束类型</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%8C%E3%80%81DQL%EF%BC%88%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5%EF%BC%89"><span class="nav-number">2.</span> <span class="nav-text">二、DQL（查询语句）</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-%E9%80%89%E6%8B%A9%E6%9F%A5%E8%AF%A2%EF%BC%9A"><span class="nav-number">2.1.</span> <span class="nav-text">1. 选择查询：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-%E5%AE%8C%E5%85%A8%E6%9F%A5%E8%AF%A2%EF%BC%9A"><span class="nav-number">2.2.</span> <span class="nav-text">2.完全查询：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-%E6%A8%A1%E7%B3%8A%E6%9F%A5%E8%AF%A2%EF%BC%9A"><span class="nav-number">2.3.</span> <span class="nav-text">3.模糊查询：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-%E6%8E%92%E5%BA%8F%E6%9F%A5%E8%AF%A2%EF%BC%88%E5%80%92%E5%BA%8F%EF%BC%8C%E9%BB%98%E8%AE%A4%E4%B8%BA%E6%AD%A3%E5%BA%8F%EF%BC%89%EF%BC%9A"><span class="nav-number">2.4.</span> <span class="nav-text">4.排序查询（倒序，默认为正序）：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5-%E8%AE%A1%E6%95%B0%E6%9F%A5%E8%AF%A2%EF%BC%9A"><span class="nav-number">2.5.</span> <span class="nav-text">5.计数查询：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#6-%E6%B1%82%E5%92%8C%E6%9F%A5%E8%AF%A2%EF%BC%9A"><span class="nav-number">2.6.</span> <span class="nav-text">6.求和查询：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#7-%E5%B9%B3%E5%9D%87%E5%80%BC%E6%9F%A5%E8%AF%A2%EF%BC%9A"><span class="nav-number">2.7.</span> <span class="nav-text">7.平均值查询：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#8-%E6%9C%80%E5%A4%A7%E5%80%BC%E6%9F%A5%E8%AF%A2%EF%BC%9A"><span class="nav-number">2.8.</span> <span class="nav-text">8.最大值查询：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#9-%E6%9C%80%E5%B0%8F%E5%80%BC%E6%9F%A5%E8%AF%A2%EF%BC%9A"><span class="nav-number">2.9.</span> <span class="nav-text">9.最小值查询：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#10-%E5%9B%9B%E8%88%8D%E4%BA%94%E5%85%A5%E6%9F%A5%E8%AF%A2%EF%BC%9A"><span class="nav-number">2.10.</span> <span class="nav-text">10.四舍五入查询：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#11-%E5%8E%BB%E9%87%8D%E6%9F%A5%E8%AF%A2%EF%BC%9A"><span class="nav-number">2.11.</span> <span class="nav-text">11.去重查询：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#12-%E5%88%86%E7%BB%84%E6%9F%A5%E8%AF%A2%EF%BC%9A"><span class="nav-number">2.12.</span> <span class="nav-text">12.分组查询：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#13-%E5%A4%9A%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2%EF%BC%9A"><span class="nav-number">2.13.</span> <span class="nav-text">13.多条件查询：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#14-%E4%B8%8D%E7%A1%AE%E5%AE%9A%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2%EF%BC%9A"><span class="nav-number">2.14.</span> <span class="nav-text">14.不确定条件查询：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#15-%E5%A4%9A%E6%9D%A1%E4%BB%B6%E5%88%86%E7%BB%84%E6%B1%82%E5%80%BC%E6%9F%A5%E8%AF%A2%EF%BC%9A"><span class="nav-number">2.15.</span> <span class="nav-text">15.多条件分组求值查询：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#16-%E5%AD%90%E6%9F%A5%E8%AF%A2%EF%BC%88%E5%AD%90%E6%9F%A5%E8%AF%A2%E7%9A%84%E7%BB%93%E6%9E%9C%E4%BD%9C%E4%B8%BA%E4%B8%BB%E6%9F%A5%E8%AF%A2%E7%9A%84%E6%9D%A1%E4%BB%B6%EF%BC%89%EF%BC%9A"><span class="nav-number">2.16.</span> <span class="nav-text">16.子查询（子查询的结果作为主查询的条件）：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#17-%E8%BF%9E%E8%A1%A8%E6%9F%A5%E8%AF%A2%EF%BC%88%E5%86%85%E8%BF%9E%E6%8E%A5%EF%BC%89%EF%BC%9A"><span class="nav-number">2.17.</span> <span class="nav-text">17.连表查询（内连接）：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#18-%E8%BF%9E%E8%A1%A8%E6%9F%A5%E8%AF%A2%EF%BC%88%E5%86%85%E8%BF%9E%E6%8E%A5%EF%BC%89%EF%BC%88%E5%8E%BB%E9%87%8D%EF%BC%89%EF%BC%9A"><span class="nav-number">2.18.</span> <span class="nav-text">18.连表查询（内连接）（去重）：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#19-%E8%BF%9E%E8%A1%A8%E6%9F%A5%E8%AF%A2%EF%BC%88%E5%B7%A6%E5%A4%96%E8%BF%9E%E6%8E%A5%EF%BC%89%EF%BC%88%E6%98%BE%E7%A4%BA%E5%B7%A6%E8%A1%A8%E7%9A%84%E5%85%A8%E9%83%A8%E4%BF%A1%E6%81%AF%E5%92%8C%E5%8F%B3%E8%A1%A8%E7%9B%B8%E5%85%B3%E8%81%94%E7%9A%84%E4%BF%A1%E6%81%AF%EF%BC%89%EF%BC%9A"><span class="nav-number">2.19.</span> <span class="nav-text">19.连表查询（左外连接）（显示左表的全部信息和右表相关联的信息）：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#20-%E8%BF%9E%E8%A1%A8%E6%9F%A5%E8%AF%A2%EF%BC%88%E5%8F%B3%E5%A4%96%E8%BF%9E%E6%8E%A5%EF%BC%89%EF%BC%88%E6%98%BE%E7%A4%BA%E5%8F%B3%E8%A1%A8%E7%9A%84%E5%85%A8%E9%83%A8%E4%BF%A1%E6%81%AF%E5%92%8C%E5%B7%A6%E8%A1%A8%E7%9B%B8%E5%85%B3%E8%81%94%E7%9A%84%E4%BF%A1%E6%81%AF%EF%BC%89%EF%BC%9A"><span class="nav-number">2.20.</span> <span class="nav-text">20.连表查询（右外连接）（显示右表的全部信息和左表相关联的信息）：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#21-%E8%BF%9E%E8%A1%A8%E6%9F%A5%E8%AF%A2%EF%BC%88%E5%85%A8%E5%A4%96%E8%BF%9E%E6%8E%A5%EF%BC%89%EF%BC%88%E6%98%BE%E7%A4%BA%E4%B8%A4%E4%B8%AA%E8%A1%A8%E4%B8%AD%E7%9A%84%E6%89%80%E6%9C%89%E8%AE%B0%E5%BD%95%EF%BC%89%EF%BC%9A"><span class="nav-number">2.21.</span> <span class="nav-text">21.连表查询（全外连接）（显示两个表中的所有记录）：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#22-%E8%AF%B4%E6%98%8E%EF%BC%9A%E5%87%A0%E4%B8%AA%E9%AB%98%E7%BA%A7%E6%9F%A5%E8%AF%A2%E8%BF%90%E7%AE%97%E8%AF%8D"><span class="nav-number">2.22.</span> <span class="nav-text">22.说明：几个高级查询运算词</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%89%E3%80%81DML%EF%BC%88%E6%95%B0%E6%8D%AE%E6%93%8D%E4%BD%9C%E8%AF%AD%E5%8F%A5%EF%BC%9A%E6%8F%92%E5%85%A5%E3%80%81%E4%BF%AE%E6%94%B9%E3%80%81%E5%88%A0%E9%99%A4%EF%BC%89"><span class="nav-number">3.</span> <span class="nav-text">三、DML（数据操作语句：插入、修改、删除）</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -574,13 +653,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">21k</span>
+    <span title="站点总字数">23k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">19 分钟</span>
+    <span title="站点阅读时长">21 分钟</span>
 </div>
 
 <!--
